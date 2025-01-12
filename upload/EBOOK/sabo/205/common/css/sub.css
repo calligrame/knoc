@@ -1,0 +1,378 @@
+@import url(common.css);
+@import url(fonts.css);
+
+/* 공통요소 */
+.line {
+  background: #aeaeae;
+  height: 1px;
+  width: 100%;
+}
+a:link {
+  color: #777;
+}
+a:visited {
+  color: #777;
+}
+
+/* 콘텐츠 헤더 영역 시작 */
+.article-header-container {
+  height: 100vh;
+  background-color: white;
+  background-image: url("../../images/sub/sub1/header.jpg");
+  padding-top: 100px;
+  background-position: center left;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.scroll {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+.article-title {
+  font-family: var(--KNOC-main-h2-font-family);
+  font-size: var(--KNOC-main-h4-font-size);
+  margin-bottom: 40px;
+}
+
+.article-subtitle {
+  font-family: var(--KNOC-main-h5-font-family);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.article-writer {
+  font-size: 1.25rem;
+}
+/* 콘텐츠 헤더 영역 끝 */
+
+/* 콘텐츠 내용 시작 */
+.article-body-container {
+  height: 100%;
+  padding-top: 9.88em;
+  padding-left: 9.88em;
+  padding-right: 9.88em;
+}
+/* 리드문 영역 시작 */
+.body-lead-wrap {
+  background-color: #ebebeb;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 96px;
+}
+/* 리드문 영역 끝 */
+
+/* 사이드바 영역 시작 */
+.side-menu-container {
+  width: 390px;
+  min-width: 390px;
+  position: 2000px;
+}
+.side-menu-item-wrap {
+  position: sticky;
+  top: 100px;
+}
+.side-menu-item {
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  color: #6d6d6d;
+  border-bottom: 1px solid #6d6d6d;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.side-menu-item.active {
+  font-weight: 700;
+  border-bottom: 3px solid #3a3a3a;
+}
+.side-menu-item.active a {
+  color: #3a3a3a;
+}
+/* 사이드바 영역 끝 */
+/* 본문 영역 시작 */
+.body-text-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  position: relative;
+  height: 100%;
+}
+.text-content-wrap {
+  width: 960px;
+  max-width: 960px;
+}
+.article-body-container p {
+  font-size: var(--KNOC-article-text-font-size);
+  line-height: 1.875;
+}
+/* 본문 영역 끝 */
+/* 콘텐츠 내용 끝 */
+
+/* 연관콘텐츠 영역 시작 */
+/* 연관콘텐츠 카드 시작 */
+.related-article-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+.relative-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.r-article-thumbnail {
+  height: 150px;
+  background-color: rgb(74, 109, 139);
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center center;
+}
+.r-category,
+.r-title {
+  display: block;
+}
+.r-category {
+  font-size: 1rem;
+}
+.r-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+/* 연관콘텐츠 카드 끝 */
+/* 연관콘텐츠 영역 끝 */
+
+.content-title h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.caption {
+  font-size: 1.1rem;
+  color: #777;
+  padding-top: 20px;
+  display: inline-block;
+}
+
+/* 콘텐츠용 기본 이미지 프레임 */
+.content_image {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  /* box-shadow: 0px 10px 26px -3px rgba(0, 0, 0, 0.2); */
+}
+
+.content_image img {
+  width: 100%;
+}
+
+.cardContainer {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  /*depth of the elements */
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+
+  /*border: 1px solid #ff0000;*/
+  padding-left: 1%;
+}
+.body-cards-wrap {
+  background-color: #d8cc9e;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.cardContainer {
+  width: 100%;
+}
+.cardWrapper {
+  width: 100%;
+}
+.card {
+  width: 99%;
+  height: 200px;
+  cursor: pointer;
+
+  /*transition effects */
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card.flipped {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16),
+    0 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.card .back {
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 16px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.card .back {
+  background: #03446a;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/*Colors for front and back applied here*/
+.cardContainer:first-child .card .front {
+  background: #456a7a;
+}
+
+.cardContainer:first-child .card .back {
+  background: #456a7a;
+}
+
+.cardContainer:nth-child(2) .card .front {
+  background: #988a73;
+}
+.cardContainer:nth-child(2) .card .back {
+  background: #988a73;
+}
+
+.cardContainer:nth-child(3) .card .front {
+  background: #5e4d2a;
+}
+.cardContainer:nth-child(3) .card .back {
+  background: #5e4d2a;
+}
+
+h3.cardTitle {
+  line-height: 1.2em;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.content h3.cardTitle {
+  margin-top: 0%;
+}
+
+.content {
+  padding: 4%;
+  font-weight: 100;
+  text-align: left;
+  font-weight: bold;
+}
+
+.card-title-wrap {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cards-title {
+  font-size: 2rem;
+  font-family: var(--KNOC-main-h2-font-family);
+  font-weight: 700;
+}
+.title-img img {
+  width: 30%;
+}
+
+.relative-card:nth-child(2) .r-article-thumbnail {
+  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/visual/s1_1_visual.jpg);
+}
+.relative-card:nth-child(3) .r-article-thumbnail {
+  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/main/cont2-wrap3-2.png);
+}
+.relative-card:nth-child(4) .r-article-thumbnail {
+  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/main/cont2-wrap3-6.png);
+}
