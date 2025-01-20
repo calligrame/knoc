@@ -376,3 +376,48 @@ h3.cardTitle {
 .relative-card:nth-child(4) .r-article-thumbnail {
   background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/main/cont2-wrap3-6.png);
 }
+
+.half-text-container {
+  display: flex;
+  gap: 1.5rem;
+}
+.half-text-container .content_image {
+  flex: 1;
+  overflow: hidden;
+}
+.half-text-container .text-part {
+  flex: 1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: 1fr 4fr 4fr;
+}
+
+.grid-container {
+  font-size: var(--KNOC-article-text-font-size);
+}
+
+.grid-item {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.grid-head {
+  background-color: #03446a;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.item-year {
+  font-weight: 700;
+  color: #03446a;
+}

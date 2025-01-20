@@ -36,7 +36,7 @@ tween = gsap.to(panels, {
     snap: {
       snapTo: 1 / (panels.length - 1),
       inertia: false,
-      duration: { min: 0.1, max: 0.1 },
+      duration: { min: 0.5, max: 1 },
     },
     end: () => "+=" + (panelsContainer.offsetWidth - innerWidth),
   },
