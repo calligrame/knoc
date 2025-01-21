@@ -37,7 +37,7 @@ a:visited {
   color: white;
   text-align: center;
 }
-
+/* 휠 아이콘 애니메이션 */
 .scroll {
   width: 60px;
   height: 60px;
@@ -82,6 +82,8 @@ a:visited {
     transform: translate(0);
   }
 }
+
+/* 기사 제목 */
 .article-title {
   font-family: var(--KNOC-main-h2-font-family);
   font-size: var(--KNOC-main-h4-font-size);
@@ -90,7 +92,7 @@ a:visited {
   animation-delay: 1s;
   -webkit-animation-fill-mode: both;
 }
-
+/* 기사 부제목 */
 .article-subtitle {
   font-family: var(--KNOC-main-h5-font-family);
   font-size: 1.5rem;
@@ -99,13 +101,14 @@ a:visited {
   animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
   -webkit-animation-fill-mode: both;
 }
+/* 기고자 */
 .article-writer {
   font-size: 1.25rem;
   animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
   animation-delay: 1.5s;
   -webkit-animation-fill-mode: both;
 }
-
+/* 텍스트 나타나는 애니메이션 */
 @keyframes reveal {
   0% {
     transform: translate(0, 100%);
@@ -143,7 +146,7 @@ a:visited {
 .side-menu-container {
   width: 390px;
   min-width: 390px;
-  position: 2000px;
+  height: auto;
 }
 .side-menu-item-wrap {
   position: sticky;
@@ -166,6 +169,7 @@ a:visited {
   color: #3a3a3a;
 }
 /* 사이드바 영역 끝 */
+
 /* 본문 영역 시작 */
 .body-text-wrap {
   display: flex;
@@ -218,6 +222,17 @@ a:visited {
   font-size: 1.25rem;
   font-weight: 600;
 }
+
+.relative-card:nth-child(2) .r-article-thumbnail {
+  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/visual/s1_1_visual.jpg);
+}
+.relative-card:nth-child(3) .r-article-thumbnail {
+  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/main/cont2-wrap3-2.png);
+}
+.relative-card:nth-child(4) .r-article-thumbnail {
+  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/main/cont2-wrap3-6.png);
+}
+
 /* 연관콘텐츠 카드 끝 */
 /* 연관콘텐츠 영역 끝 */
 
@@ -244,6 +259,7 @@ a:visited {
   width: 100%;
 }
 
+/* 플래시카드 시작 */
 .cardContainer {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -392,16 +408,10 @@ h3.cardTitle {
   width: 30%;
 }
 
-.relative-card:nth-child(2) .r-article-thumbnail {
-  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/visual/s1_1_visual.jpg);
-}
-.relative-card:nth-child(3) .r-article-thumbnail {
-  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/main/cont2-wrap3-2.png);
-}
-.relative-card:nth-child(4) .r-article-thumbnail {
-  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/main/cont2-wrap3-6.png);
-}
+/* 플래시카드 끝 */
 
+/* 단 나누기 */
+/* 1:1 */
 .half-text-container {
   display: flex;
   gap: 1.5rem;
@@ -413,7 +423,20 @@ h3.cardTitle {
 .half-text-container .text-part {
   flex: 1;
 }
+/* 아이콘 - 텍스트 나란히 배치 */
+.icon-text-container {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+.icon-text-container > .content_image {
+  width: 10%;
+}
+.icon-text-container > .text-part {
+  width: 90%;
+}
 
+/* 오일실록 표(다음호에 지울 거) */
 .grid-container {
   display: grid;
   grid-template-rows: repeat(9, 1fr);
@@ -447,6 +470,7 @@ h3.cardTitle {
   color: #03446a;
 }
 
+/* 작은 제목들 꾸며주는 거 */
 .content-subtitle {
   padding: 10px 20px;
   background-color: #03446a;
@@ -458,18 +482,7 @@ h3.cardTitle {
   margin-bottom: 1.25rem;
 }
 
-.icon-text-container {
-  display: flex;
-  width: 100%;
-  gap: 1.5rem;
-}
-.icon-text-container > .content_image {
-  width: 10%;
-}
-.icon-text-container > .text-part {
-  width: 90%;
-}
-
+/* 주석 팝업 */
 #pop {
   display: none;
   position: absolute;
@@ -487,4 +500,28 @@ h3.cardTitle {
   display: block;
   left: 0;
   right: 0;
+}
+
+/* 모바일 */
+@media all and (max-width: 768px) {
+  .article-title {
+    font-size: 3rem;
+  }
+  .article-body-container {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .body-text-wrap {
+    flex-direction: column;
+  }
+  .text-content-wrap {
+    width: 100%;
+  }
+  .half-text-container {
+    flex-direction: column;
+  }
+  .icon-text-container {
+    flex-direction: column;
+  }
 }
