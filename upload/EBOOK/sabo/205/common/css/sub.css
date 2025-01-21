@@ -2,9 +2,14 @@
 @import url(fonts.css);
 
 /* 공통요소 */
-.line {
+.line-thin {
   background: #aeaeae;
   height: 1px;
+  width: 100%;
+}
+.line-bold {
+  background: #3a3a3a;
+  height: 3px;
   width: 100%;
 }
 a:link {
@@ -81,6 +86,9 @@ a:visited {
   font-family: var(--KNOC-main-h2-font-family);
   font-size: var(--KNOC-main-h4-font-size);
   margin-bottom: 40px;
+  animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
 }
 
 .article-subtitle {
@@ -88,10 +96,27 @@ a:visited {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 10px;
+  animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  -webkit-animation-fill-mode: both;
 }
 .article-writer {
   font-size: 1.25rem;
+  animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-fill-mode: both;
 }
+
+@keyframes reveal {
+  0% {
+    transform: translate(0, 100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 /* 콘텐츠 헤더 영역 끝 */
 
 /* 콘텐츠 내용 시작 */
@@ -110,7 +135,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 96px;
+  padding: 70px 96px;
 }
 /* 리드문 영역 끝 */
 
@@ -420,4 +445,46 @@ h3.cardTitle {
 .item-year {
   font-weight: 700;
   color: #03446a;
+}
+
+.content-subtitle {
+  padding: 10px 20px;
+  background-color: #03446a;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+  font-size: var(--KNOC-article-text-font-size);
+  border-radius: 40px;
+  margin-bottom: 1.25rem;
+}
+
+.icon-text-container {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+.icon-text-container > .content_image {
+  width: 10%;
+}
+.icon-text-container > .text-part {
+  width: 90%;
+}
+
+#pop {
+  display: none;
+  position: absolute;
+  left: 0;
+  max-width: 600px;
+  width: auto;
+  height: auto;
+  right: 0;
+  background-color: white;
+  border: 1px solid #777;
+  padding: 20px 10px;
+}
+
+#pop.active {
+  display: block;
+  left: 0;
+  right: 0;
 }

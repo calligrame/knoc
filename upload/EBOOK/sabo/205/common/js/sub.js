@@ -1,5 +1,6 @@
 const menuItems = document.querySelectorAll(".side-menu-item");
 const targets = document.querySelectorAll(".content-title");
+const popBox = document.getElementById("pop");
 
 const options = {
   root: null,
@@ -53,4 +54,17 @@ $(document).ready(function () {
   $(".card").click(function () {
     $(this).toggleClass("flipped");
   });
+});
+
+//주석 팝업
+const popCaption = (posX, posY, index) => {
+  const height = popBox.getBoundingClientRect().height;
+  popBox.style.left = posX + "px";
+  popBox.style.top = posY - height + "px";
+  $("#pop > p").text($(`.caption-text-${index}`).text());
+};
+$(".annotation").hover(function (e) {
+  $("#pop").toggleClass("active");
+  const index = $(this).data("caption-index");
+  popCaption(e.pageX, e.pageY, index);
 });
