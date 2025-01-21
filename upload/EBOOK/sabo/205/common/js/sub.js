@@ -54,6 +54,23 @@ $(document).ready(function () {
   $(".card").click(function () {
     $(this).toggleClass("flipped");
   });
+
+  // 사이드 버튼 메뉴 띄우기
+  var windowH = $(window).height();
+  var Bottomoffset = windowH;
+  var duration1 = 1;
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > Bottomoffset) {
+      $(".sidebtn-wrap").stop().fadeIn(duration1);
+    } else {
+      $(".sidebtn-wrap").stop().fadeOut(duration1);
+    }
+  });
+  $("#btn-top").click(function (event) {
+    event.preventDefault();
+    $("html, body").stop().animate({ scrollTop: 0 }, 500);
+    return false;
+  });
 });
 
 //주석 팝업
