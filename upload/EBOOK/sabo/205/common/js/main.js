@@ -23,21 +23,45 @@ $(window).on("load", function () {
 });
 
 /* Panels */
+
 const panels = gsap.utils.toArray("#panels-container .panel");
-tween = gsap.to(panels, {
-  xPercent: -100 * (panels.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: "#panels-container",
-    pin: true,
-    start: "top top",
-    scrub: 1,
-    anticipatePin: 1,
-    snap: {
-      snapTo: 1 / (panels.length - 1),
-      inertia: false,
-      duration: { min: 0.5, max: 1 },
-    },
-    end: () => "+=" + (panelsContainer.offsetWidth - innerWidth),
+ScrollTrigger.matchMedia({
+  "(min-width: 768px)": function () {
+    tween = gsap.to(panels, {
+      xPercent: -100 * (panels.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#panels-container",
+        pin: true,
+        start: "top top",
+        scrub: 1,
+        anticipatePin: 1,
+        snap: {
+          snapTo: 1 / (panels.length - 1),
+          inertia: false,
+          duration: { min: 0.5, max: 1 },
+        },
+        end: () => "+=" + (panelsContainer.offsetWidth - innerWidth),
+      },
+    });
+  },
+  "(max-width: 767px)": function () {
+    tween = gsap.to(panels, {
+      xPercent: -100 * (panels.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#panels-container",
+        pin: true,
+        start: "top top",
+        scrub: 1,
+        anticipatePin: 1,
+        snap: {
+          snapTo: 1 / (panels.length - 1),
+          inertia: false,
+          duration: { min: 0.5, max: 1 },
+        },
+        end: () => "+=" + (panelsContainer.offsetWidth - innerWidth),
+      },
+    });
   },
 });

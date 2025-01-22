@@ -492,3 +492,34 @@ body {
 .footer .ficon {
   margin: 20px auto;
 }
+
+@media all and (max-width: 768px) {
+  .panel {
+    width: 100%;
+    height: 100%;
+  }
+  .full-screen {
+    width: 100%;
+    height: 100vh;
+  }
+  .news-etc-container {
+    flex-direction: column;
+  }
+  .insight-bento {
+    display: flex;
+    flex-direction: column;
+  }
+  .comunity-wrap {
+    width: 100%;
+  }
+  .peoples-flex {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .events-wrap {
+    flex-direction: column;
+  }
+  .event-item {
+    width: 100%;
+  }
+}

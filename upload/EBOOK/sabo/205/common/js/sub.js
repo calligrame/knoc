@@ -56,32 +56,44 @@ $(document).ready(function () {
   });
 
   // 사이드 버튼 메뉴 띄우기
-  var windowH = $(window).height();
-  var Bottomoffset = windowH;
-  var duration1 = 1;
+  const windowH = $(window).height();
+  const Bottomoffset = windowH;
+  const duration1 = 1;
   $(window).scroll(function () {
     if ($(this).scrollTop() > Bottomoffset) {
       $(".sidebtn-wrap").stop().fadeIn(duration1);
+      $(".mob-side-menu-container").stop().fadeIn(duration1);
     } else {
       $(".sidebtn-wrap").stop().fadeOut(duration1);
+      $(".mob-side-menu-container").stop().fadeOut(duration1);
     }
   });
-  $("#btn-top").click(function (event) {
-    event.preventDefault();
+  // 맨 위로
+  $("#btn-top").click(function (e) {
+    e.preventDefault();
     $("html, body").stop().animate({ scrollTop: 0 }, 500);
     return false;
   });
-});
+  // 모바일에서 사이드메뉴 띄우기
+  $("#btn-content-list").click(function (e) {
+    e.preventDefault();
+    $("#btn-content-list").toggleClass("open");
+    $(".mob-side-menu-container").toggleClass("open");
+  });
+  $(".mob-side-menu-item").click(function (e) {
+    $(".mob-side-menu-container").removeClass("open");
+  });
 
-//주석 팝업
-const popCaption = (posX, posY, index) => {
-  const height = popBox.getBoundingClientRect().height;
-  popBox.style.left = posX + "px";
-  popBox.style.top = posY - height + "px";
-  $("#pop > p").text($(`.caption-text-${index}`).text());
-};
-$(".annotation").hover(function (e) {
-  $("#pop").toggleClass("active");
-  const index = $(this).data("caption-index");
-  popCaption(e.pageX, e.pageY, index);
+  //주석 팝업
+  const popCaption = (posX, posY, index) => {
+    const height = popBox.getBoundingClientRect().height;
+    popBox.style.left = posX + "px";
+    popBox.style.top = posY - height + "px";
+    $("#pop > p").text($(`.caption-text-${index}`).text());
+  };
+  $(".annotation").hover(function (e) {
+    $("#pop").toggleClass("active");
+    const index = $(this).data("caption-index");
+    popCaption(e.pageX, e.pageY, index);
+  });
 });

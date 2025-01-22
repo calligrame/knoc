@@ -170,6 +170,38 @@ a:visited {
 }
 /* 사이드바 영역 끝 */
 
+/* 사이드바 영역(모바일) 시작 */
+.mob-side-menu-container {
+  width: 100%;
+  position: fixed;
+  height: fit-content;
+  background-color: #ffffff;
+  z-index: 9;
+  bottom: -100%;
+  transition: all 500ms ease-in-out;
+  padding: 1rem;
+}
+.mob-side-menu-container.open {
+  bottom: 100px;
+}
+
+.mob-side-menu-item-wrap {
+  padding: 2rem 1rem 2rem 1rem;
+
+  width: 100%;
+}
+.mob-side-menu-item {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  padding-bottom: 20px;
+  color: #6d6d6d;
+  border-bottom: 1px solid #6d6d6d;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+/* 사이드바 영역(모바일) 끝 */
+
 /* 본문 영역 시작 */
 .body-text-wrap {
   display: flex;
@@ -507,6 +539,7 @@ h3.cardTitle {
   position: fixed;
   bottom: 100px;
   right: 3%;
+  z-index: 10;
 }
 .side-btn {
   width: 60px;
@@ -532,13 +565,30 @@ h3.cardTitle {
 /* 사이드메뉴 토글 버튼. pc버전에서는 안 보이게. */
 #btn-content-list {
   display: none;
+  position: absolute;
+}
+#btn-content-list.side-btn.open img {
+}
+.btn-ico {
+  position: absolute;
+}
+#ico-bar {
+  display: block;
+}
+
+#ico-x {
+  display: none;
+}
+
+#btn-content-list.side-btn.open #ico-bar {
+  display: none;
+}
+#btn-content-list.side-btn.open #ico-x {
+  display: block;
 }
 
 /* 모바일 */
 @media all and (max-width: 768px) {
-  .article-title {
-    font-size: 3rem;
-  }
   .article-body-container {
     padding-top: 2em;
     padding-left: 2em;
@@ -557,17 +607,12 @@ h3.cardTitle {
     flex-direction: column;
   }
   .side-menu-container {
-    width: 100%;
-    min-width: unset;
-    height: fit-content;
+    display: none;
   }
-  .side-menu-item-wrap {
-    background-color: #ffffff;
-    position: absolute;
+  .mob-side-menu-container {
+    display: block;
   }
-  .side-btn:nth-child(1) {
-    margin-bottom: 0;
-  }
+
   .sidebtn-wrap {
     width: 100%;
     background-color: white;
@@ -586,8 +631,14 @@ h3.cardTitle {
   .side-btn img {
     width: 40%;
   }
+  .side-btn:nth-child(1) {
+    margin-bottom: 0;
+  }
   #btn-content-list {
     display: flex;
+  }
+  #btn-content-list img {
+    width: 40%;
   }
   .content_image {
     margin-bottom: 20px;
@@ -596,6 +647,30 @@ h3.cardTitle {
     gap: 0.9rem;
   }
   .icon-text-container > .content_image {
-    width: 70%;
+    width: 30%;
+  }
+  .mob-centered .text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body-lead-wrap {
+    padding: 2rem;
+    margin-bottom: 40px;
+  }
+  .grid-container {
+    grid-template-columns: 2fr 4fr 4fr;
+  }
+  .grid-item {
+    padding: 0.45rem;
+  }
+  .annotation-wrap .caption {
+    padding-top: 0;
+  }
+  .related-article-wrap {
+    flex-direction: column;
+  }
+  .r-title {
+    font-size: 0.95rem;
   }
 }
