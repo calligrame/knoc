@@ -304,10 +304,11 @@ input:checked ~ .tab-content-wrap {
     display: none;
   }
   #header-left {
-    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    padding: unset;
   }
   #header-right {
-    padding-right: 20px;
   }
   #header {
     height: 70px;
@@ -338,9 +339,21 @@ input:checked ~ .tab-content-wrap {
   #btn_mob_nav {
     display: block;
     z-index: 999;
+    background-color: unset;
+    border-radius: unset;
+  }
+  #btn_mob_nav svg {
+    width: 36px;
+    height: 36px;
   }
   #btn_nav {
     display: none;
+  }
+  .logo {
+    width: 70% !important;
+  }
+  .logo img {
+    width: 100%;
   }
 }
 
