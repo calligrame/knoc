@@ -10,6 +10,7 @@ let panelsSection = document.querySelector("#panels"),
   panelsContainer = document.querySelector("#panels-container"),
   tween;
 
+const panels = gsap.utils.toArray("#panels-container .panel");
 let scrollFunc = ScrollTrigger.getScrollFunc(window);
 
 $(window).on("load", function () {
@@ -22,9 +23,19 @@ $(window).on("load", function () {
   gsap.ticker.lagSmoothing(0);
 });
 
+// let scrollTween = gsap.to(panels, {
+//   xPercent: -100 * (panels.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: "#panels-container",
+//     start: "top top",
+//     end: () => "+=" + (panelsContainer.offsetWidth - innerWidth),
+//     pin: true,
+//     scrub: true,
+//     invalidateOnRefresh: true,
+//   },
+// });
 /* Panels */
-
-const panels = gsap.utils.toArray("#panels-container .panel");
 
 ScrollTrigger.matchMedia({
   "(min-width: 768px)": function () {
@@ -45,6 +56,17 @@ ScrollTrigger.matchMedia({
         end: () => "+=" + (panelsContainer.offsetWidth - innerWidth),
       },
     });
+
+    // gsap.to("#panel-3 .thumb-text-wrap", {
+    //   autoAlpha: 1,
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: "#panel-3",
+    //     start: "left 40%",
+    //     end: "left 20%",
+    //     markers: true,
+    //   },
+    // });
   },
   "(max-width: 767px)": function () {
     gsap.to(panels, {
@@ -61,4 +83,22 @@ ScrollTrigger.matchMedia({
       },
     });
   },
+});
+
+// 사이드 버튼 메뉴 띄우기
+const windowH = panelsContainer.getBoundingClientRect();
+const Bottomoffset = windowH.width;
+const duration1 = 1;
+$(window).scroll(function () {
+  if ($(this).scrollTop() > Bottomoffset) {
+    $("#btn-top").stop().fadeIn(duration1);
+  } else {
+    $("#btn-top").stop().fadeOut(duration1);
+  }
+});
+// 맨 위로
+$("#btn-top").click(function (e) {
+  e.preventDefault();
+  $("html, body").stop().animate({ scrollTop: 0 }, 500);
+  return false;
 });

@@ -23,7 +23,6 @@ a:visited {
 .article-header-container {
   height: 100vh;
   background-color: white;
-  background-image: url("../../images/sub/sub1/header.jpg");
   padding-top: 100px;
   background-position: center left;
   background-size: 70%;
