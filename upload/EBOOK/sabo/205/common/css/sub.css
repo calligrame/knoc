@@ -586,6 +586,27 @@ h3.cardTitle {
   display: block;
 }
 
+/* 코너별 */
+/* 1. KNOC은 지금 */
+.letter-container {
+  background-color: #f4f0e0;
+  width: 100%;
+}
+.letter-line-wrap {
+  width: 100%;
+}
+.letter-line-wrap img {
+  width: 100%;
+}
+.letter-wrap {
+  padding: 0 3rem;
+}
+.letter-title h5 {
+  font-family: "ChosunCentennial";
+  text-align: center;
+  font-size: 2.5rem !important;
+}
+
 /* 모바일 */
 @media all and (max-width: 768px) {
   .article-body-container {
