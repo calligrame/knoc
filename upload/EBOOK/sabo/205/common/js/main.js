@@ -11,6 +11,8 @@ let panelsSection = document.querySelector("#panels"),
   tween;
 
 const panels = gsap.utils.toArray("#panels-container .panel");
+let sections = gsap.utils.toArray(".panel");
+
 let scrollFunc = ScrollTrigger.getScrollFunc(window);
 
 $(window).on("load", function () {
@@ -39,52 +41,32 @@ $(window).on("load", function () {
 
 ScrollTrigger.matchMedia({
   "(min-width: 768px)": function () {
-    tween = gsap.to(panels, {
-      xPercent: -100 * (panels.length - 1),
+    gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
-        trigger: "#panels-container",
+        trigger: ".container",
         pin: true,
-        start: "top top",
         scrub: 1,
-        anticipatePin: 1,
-        snap: {
-          snapTo: 1 / (panels.length - 1),
-          inertia: false,
-          duration: { min: 0.5, max: 1 },
-        },
-        end: () => "+=" + (panelsContainer.offsetWidth - innerWidth),
+        snap: 1 / (sections.length - 1),
+        end: () => "+=" + document.querySelector(".container").offsetWidth,
       },
     });
-
-    // gsap.to("#panel-3 .thumb-text-wrap", {
-    //   autoAlpha: 1,
-    //   ease: "none",
-    //   scrollTrigger: {
-    //     trigger: "#panel-3",
-    //     start: "left 40%",
-    //     end: "left 20%",
-    //     markers: true,
-    //   },
-    // });
   },
   "(max-width: 767px)": function () {
-    gsap.to(panels, {
-      xPercent: -100 * (panels.length - 1),
+    gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
-        trigger: "#panels-container",
+        trigger: ".container",
         pin: true,
-
         scrub: 1,
-
-        snap: 1 / (panels.length - 1),
-        end: () => "+=" + panelsContainer.offsetWidth,
+        snap: 1 / (sections.length - 1),
+        end: () => "+=" + document.querySelector(".container").offsetWidth,
       },
     });
   },
 });
-
 // 사이드 버튼 메뉴 띄우기
 const windowH = panelsContainer.getBoundingClientRect();
 const Bottomoffset = windowH.width;

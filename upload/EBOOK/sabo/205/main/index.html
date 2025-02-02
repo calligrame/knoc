@@ -85,88 +85,80 @@
     <![endif]-->
   </head>
   <body>
-    <div id="header"></div>
-    <main class="content">
-      <section id="panels">
-        <div id="panels-container" style="width: 400%">
-          <!-- 인트로 시작 -->
-          <article id="panel-1" class="panel full-screen">
-            <div class="intro-wrap full-screen">
-              <h1 class="theme-title"><span>MAPPING</span></h1>
-            </div>
-            <div class="arrow">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+    <header id="header"></header>
 
-            <div class="container">
-              <div class="theme-desc-wrap">
-                <h2 class="theme-title">MAPPING</h2>
-                <p class="theme-desc">
-                  어딘가를 나아갈 때는<br />
-                  강한 의지가 담긴 청사진, 뚜렷한 목표와 계획이 필요하다. <br />
-                  <strong>
-                    우리의 올 한 해는 어떻게 계획될 것이며, <br />
-                    석유개발산업의 미래는 어떻게 그려지고 있을까?</strong
-                  >
-                </p>
-              </div>
-              <video
-                id="myVideo"
-                width="100%"
-                autoplay=""
-                muted=""
-                loop=""
-                playsinline=""
+    <div class="container">
+      <div class="panel panel1">
+        <div class="intro-wrap">
+          <h1 class="theme-title"><span>MAPPING</span></h1>
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="intro-container">
+          <div class="theme-desc-wrap">
+            <h2 class="theme-title">MAPPING</h2>
+            <p class="theme-desc">
+              어딘가를 나아갈 때는<br />
+              강한 의지가 담긴 청사진, 뚜렷한 목표와 계획이 필요하다. <br />
+              <strong>
+                우리의 올 한 해는 어떻게 계획될 것이며, <br />
+                석유개발산업의 미래는 어떻게 그려지고 있을까?</strong
               >
-                <source src="../images/main/main.webm" type="video/mp4" />
-              </video>
-            </div>
-          </article>
-          <!-- 인트로 끝 -->
-          <!-- 뉴스 시작(가로 슬라이드 영역) -->
-          <article id="panel-2" class="panel panel-bg full-screen">
-            <div class="news-container">
-              <div class="thumb-text-wrap">
-                <h5 class="category">KNOC는 지금</h5>
-                <h3 class="title">2025년 신년사</h3>
-              </div>
-              <a class="btn-article" href="#">바로가기</a>
-            </div>
-            <span class="news-thumb thumb">
-              <img src="../images/main/thumb-knocnow.jpg" alt="" />
-            </span>
-          </article>
-          <article id="panel-3" class="panel panel-bg full-screen">
-            <div class="news-container">
-              <div class="thumb-text-wrap">
-                <h5 class="category">이슈1</h5>
-                <h3 class="title">'동해 심해 1차 탐사시추</h3>
-              </div>
-              <a class="btn-article" href="#">바로가기</a>
-            </div>
-          </article>
-          <article id="panel-4" class="panel panel-bg full-screen">
-            <div class="news-container">
-              <div class="thumb-text-wrap">
-                <h5 class="category">이슈2</h5>
-                <h3 class="title">
-                  데이터를 분석해 <br />
-                  혁신적이고 창의적인 아이디어를 제안합니다
-                </h3>
-              </div>
-              <a class="btn-article" href="#">바로가기</a>
-            </div>
-            <span class="news-thumb thumb">
-              <img src="../images/main/thumb-issue2.jpg" alt="" />
-            </span>
-          </article>
-          <!-- 뉴스 끝(가로 슬라이드 영역) -->
+            </p>
+          </div>
+          <div id="myVideo">
+            <video autoplay="" muted="" loop="" playsinline="">
+              <source src="../images/main/main.webm" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <section class="panel panel-bg">
+        <div class="news-container">
+          <div class="thumb-text-wrap">
+            <h5 class="category">KNOC는 지금</h5>
+            <h3 class="title">2025년 신년사</h3>
+          </div>
+          <a class="btn-article" href="#">바로가기</a>
+        </div>
+        <span class="news-thumb thumb">
+          <img src="../images/main/thumb-knocnow.jpg" alt="" />
+        </span>
+      </section>
+      <section class="panel panel-bg">
+        <div class="news-container">
+          <div class="thumb-text-wrap">
+            <h5 class="category">이슈1</h5>
+            <h3 class="title">'동해 심해 1차 탐사시추</h3>
+          </div>
+          <a class="btn-article" href="#">바로가기</a>
         </div>
       </section>
+      <section class="panel panel-bg">
+        <div class="news-container">
+          <div class="thumb-text-wrap">
+            <h5 class="category">이슈2</h5>
+            <h3 class="title">
+              데이터를 분석해 <br />
+              혁신적이고 창의적인 아이디어를 제안합니다
+            </h3>
+          </div>
+          <a class="btn-article" href="#">바로가기</a>
+        </div>
+        <span class="news-thumb thumb">
+          <img src="../images/main/thumb-issue2.jpg" alt="" />
+        </span>
+      </section>
+    </div>
+
+    <div class="articles-container">
       <!-- 나머지 뉴스 시작 -->
-      <section class="news-etc-container full-screen">
+      <section class="news-etc-container articles-section">
         <div id="familyKnoc" class="news-etc-wrap panel-bg">
           <div class="news-container">
             <div class="thumb-text-wrap">
@@ -194,7 +186,7 @@
       </section>
       <!-- 나머지 뉴스 끝 -->
       <!-- 인사이트 시작 -->
-      <section class="insight-container full-screen">
+      <section class="insight-container articles-section">
         <p class="section-title">INSIGHT</p>
         <div class="insight-bento">
           <div id="knowledge" class="bento-item panel-bg">
@@ -249,7 +241,7 @@
       </section>
       <!-- 인사이트 끝 -->
       <!-- 사람들 시작 -->
-      <section class="peoples-container full-screen">
+      <section class="peoples-container articles-section">
         <p class="section-title">사람들</p>
         <div class="peoples-flex">
           <div id="oneTeam" class="peoples-wrap panel-bg">
@@ -257,8 +249,8 @@
               <div class="thumb-text-wrap-small">
                 <p class="category">원팀 KNOC</p>
                 <b class="title"
-                  >공개 선언합니다! <br />
-                  나(우리)의 2025년 새해 목표!
+                  >2025년 새해에도 우리는 <br />
+                  ‘원 팀(One Team)’이니까!
                 </b>
               </div>
             </div>
@@ -282,10 +274,14 @@
               <div class="thumb-text-wrap-small">
                 <p class="category">멘토 인터뷰</p>
                 <b class="title"
-                  >맑게 핀 해바라기 곁에 선 <br />괴짜 선생님, 김홍수</b
+                  >단단한 개인의 연결이 <br />
+                  ‘다정’이 돼요 - 김민섭 작가</b
                 >
               </div>
             </div>
+            <span class="peoples-thumb thumb">
+              <img src="../images/main/thumb-mentor.jpg" alt="" />
+            </span>
           </div>
           <div id="diy" class="peoples-wrap panel-bg">
             <div class="peoples-title-wrap">
@@ -306,7 +302,7 @@
       <!-- 사람들 끝 -->
 
       <!-- 커뮤니티  시작 -->
-      <section class="comunity-container full-screen">
+      <section class="comunity-container articles-section">
         <p class="section-title">커뮤니티</p>
         <div class="comunity-wrap">
           <div class="events-wrap">
@@ -376,38 +372,128 @@
         </div>
       </section>
       <!-- 커뮤니티 끝 -->
-      <div id="btn-top" class="main-side-btn">
-        <img src="../images/common/up.svg" alt="" />
-      </div>
-      <div class="footer" id="footer">
-        <div class="container">
-          <div class="flogo">
-            <figure class="image">
-              <img src="../images/common/flogo.png" alt="" />
-            </figure>
-          </div>
-          <div class="ftext">
-            <p class="fs14 copyright">
-              울산광역시 중구 종가로 305 한국석유공사 ⓒ KNOC 2024 ALL RIGHTS
-              RESERVED.
-            </p>
-          </div>
-          <div class="ficon">
-            <figure class="image">
-              <a href="https://blog.naver.com/knoc3" target="_blank"
-                ><img src="../images/common/f_blog.png" alt=""
-              /></a>
-            </figure>
-            <figure class="image">
-              <a
-                href="https://www.youtube.com/channel/UCzte3fAK5m-9KswRH3SPNuA"
-                target="_blank"
-                ><img src="../images/common/f_youtube.png" alt=""
-              /></a>
-            </figure>
-          </div>
+      <!-- 푸터 -->
+      <footer id="footer_wrap">
+        <div class="footer-logo" style="width: 100px">
+          <img
+            src="img/common/klacc-orig.png"
+            alt="강원랜드 마음채움센터 로고"
+          />
         </div>
-      </div>
-    </main>
+        <div class="footer-info">
+          <span
+            >26154 강원도 정선군 사북읍 하이원길 265 KLACC | TEL : 080.7575.545
+            | COPYRIGHT © 2016 HIGH1 RESORT. ALL RIGHTS RESERVED.
+          </span>
+          <select
+            name="backissue"
+            class="tail_select"
+            onchange="if(this.value) location.href=(this.value);"
+          >
+            <option value="">지난호 보기</option>
+            <option value="http://www.klaccmagazine.co.kr/2024_06/index.html">
+              2024년 상반기호
+            </option>
+            <option value="http://www.klaccmagazine.co.kr/2023_04/main.html">
+              2023년 겨울호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2023_03/main.html">
+              2023년 가을호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2023_02/main.html">
+              2023년 여름호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2023_01/main.html">
+              2023년 봄호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2022_04/main.html">
+              2022년 겨울호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2022_03/main.html">
+              2022년 가을호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2022_02/main.html">
+              2022년 여름호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2022_01/main.html">
+              2022년 봄호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2021_04/main.html">
+              2021년 겨울호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2021_03/main.html">
+              2021년 가을호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2021_02/main.html">
+              2021년 여름호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2021_01/main.html">
+              2021년 봄호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2020_04/main.html">
+              2020년 겨울호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2020_03/main.html">
+              2020년 가을호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2020_02/main.html">
+              2020년 여름호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2020_01/main.html">
+              2020년 봄호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2019_04/main.html">
+              2019년 겨울호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2019_03/main.html">
+              2019년 가을호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2019_02/main.html">
+              2019년 여름호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2019_01/main.html">
+              2019년 봄호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2018_04/main.html">
+              2018년 겨울호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2018_01/main.html">
+              2018년 가을호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2018_02/main.html">
+              2018년 여름호
+            </option>
+            ');
+            <option value="http://www.klaccmagazine.co.kr/2018_00/main.html">
+              2018년 봄호
+            </option>
+            ');
+          </select>
+        </div>
+      </footer>
+      <!-- 푸터 -->
+    </div>
   </body>
 </html>
