@@ -600,7 +600,30 @@ h3.cardTitle {
   position: fixed;
   bottom: 100px;
   right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   z-index: 10;
+}
+.sidebtn-wrap a:visited {
+  color: #3a3a3a;
+}
+.quickmenu-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.side-btn-long {
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+#subscribe {
+  background-color: #c3e0ff;
+}
+#kakao {
+  background-color: #ffe812;
 }
 .side-btn {
   width: 60px;
@@ -679,6 +702,19 @@ h3.cardTitle {
   grid-column: span 2;
   border-right: 3px solid white;
 }
+/* 14. ai+knoc */
+.list-title {
+  margin-bottom: 20px;
+}
+.dot-frame ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+.dot-frame li {
+  font-size: var(--KNOC-article-text-font-size);
+  list-style: disc;
+  margin-bottom: 20px;
+}
 
 .green {
   background-color: #ebffe0;
@@ -739,8 +775,26 @@ h3.cardTitle {
     align-items: center;
     position: fixed;
     bottom: 0;
-    padding: 1.25rem 0;
+    padding: 0.95rem 0;
     right: 0;
+  }
+  .side-btn-long a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tac {
+    text-align: left;
+    width: fit-content;
+  }
+  .side-btn-long img {
+    width: 50%;
+  }
+  .tools-wrap {
+    display: flex;
+  }
+  .quickmenu-wrap {
+    flex-direction: row;
   }
   .side-btn {
     box-shadow: unset;

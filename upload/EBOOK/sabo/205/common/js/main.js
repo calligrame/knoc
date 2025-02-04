@@ -68,19 +68,20 @@ ScrollTrigger.matchMedia({
   },
 });
 // 사이드 버튼 메뉴 띄우기
-const windowH = panelsContainer.getBoundingClientRect();
+const panelsContainer2 = document.querySelector(".container");
+const windowH = panelsContainer2.getBoundingClientRect();
 const Bottomoffset = windowH.width;
 const duration1 = 1;
 $(window).scroll(function () {
   if ($(this).scrollTop() > Bottomoffset) {
-    $("#btn-top").stop().fadeIn(duration1);
+    $(".sidebtn-wrap").stop().fadeIn(duration1);
   } else {
-    $("#btn-top").stop().fadeOut(duration1);
+    $(".sidebtn-wrap").stop().fadeOut(duration1);
   }
 });
 // 맨 위로
 $("#btn-top").click(function (e) {
   e.preventDefault();
-  $("html, body").stop().animate({ scrollTop: 0 }, 500);
+  $("html, body").stop().animate({ scrollTop: 0 }, 1500);
   return false;
 });
