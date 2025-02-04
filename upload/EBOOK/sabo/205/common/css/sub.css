@@ -528,6 +528,40 @@ h3.cardTitle {
   margin-bottom: 1.25rem;
 }
 
+.rounded-title {
+  padding: 0.6rem 1.25rem;
+  background-color: #03446a;
+  width: 50%;
+  border-radius: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.interview-answer-container {
+  display: flex;
+  gap: 20px;
+}
+.interviewee-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1.5;
+}
+.profile-img {
+  width: 100%;
+}
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #03446a;
+}
+.interview-answer-container p {
+  flex: 8.5;
+}
+.rounded-title p {
+  color: white;
+  font-weight: 700;
+}
+
 /* 주석 팝업 */
 #pop {
   display: none;
