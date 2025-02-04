@@ -39,6 +39,9 @@ a:visited {
   color: white;
   text-align: center;
 }
+.content-title-wrap {
+  padding: 0 2em;
+}
 /* 휠 아이콘 애니메이션 */
 .scroll {
   width: 60px;
@@ -492,7 +495,6 @@ h3.cardTitle {
 .grid-container {
   font-size: var(--KNOC-article-text-font-size);
 }
-
 .grid-item {
   padding: 0.75rem;
   display: flex;
@@ -528,6 +530,16 @@ h3.cardTitle {
   margin-bottom: 1.25rem;
 }
 
+.quote {
+  color: #6d6d6d;
+}
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #9e9e9e;
+}
+
+/* 원형 타이틀 */
 .rounded-title {
   padding: 0.6rem 1.25rem;
   background-color: #03446a;
@@ -536,6 +548,7 @@ h3.cardTitle {
   margin: 0 auto;
   text-align: center;
 }
+
 .interview-answer-container {
   display: flex;
   gap: 20px;
@@ -744,5 +757,11 @@ h3.cardTitle {
   }
   .content-title h5 {
     font-size: 0.95rem;
+  }
+  .interview-answer-container {
+    /* flex-direction: column; */
+  }
+  .dot-frame {
+    padding: 20px;
   }
 }
