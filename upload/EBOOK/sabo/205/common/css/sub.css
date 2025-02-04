@@ -668,6 +668,41 @@ h3.cardTitle {
   text-align: center;
   font-size: 2.5rem !important;
 }
+/* 7. 스페셜이슈 */
+.special-grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, auto) repeat(10, 1fr);
+  font-size: var(--KNOC-article-text-font-size);
+}
+.special-grid-container .grid-head {
+  grid-column: span 2;
+  border-right: 3px solid white;
+}
+
+.green {
+  background-color: #ebffe0;
+}
+.skyblue {
+  background-color: #daf0ff;
+}
+
+.special-grid-container .grid-item:nth-child(2n + 1) {
+  border-right: 3px solid white;
+}
+
+.special-grid-container .grid-item:nth-child(6n) {
+  border-right: 0 !important;
+}
+.special-grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto) repeat(10, 1fr);
+  font-size: var(--KNOC-article-text-font-size);
+}
+.special-grid-container2 .grid-item:nth-child(2n + 1) {
+  border-right: 1px solid #3a3a3a;
+}
 
 /* 모바일 */
 @media all and (max-width: 768px) {
@@ -758,10 +793,25 @@ h3.cardTitle {
   .content-title h5 {
     font-size: 0.95rem;
   }
+  .caption {
+    font-size: 0.8rem;
+  }
   .interview-answer-container {
     /* flex-direction: column; */
   }
   .dot-frame {
     padding: 20px;
+  }
+  .article-title {
+    margin-bottom: 20px;
+  }
+  .article-subtitle {
+    font-size: 1.25rem;
+  }
+  .article-writer {
+    font-size: 0.95rem;
+  }
+  .cards-title {
+    font-size: 1.25rem;
   }
 }
