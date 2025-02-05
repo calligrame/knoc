@@ -17,6 +17,7 @@ let scrollFunc = ScrollTrigger.getScrollFunc(window);
 
 $(window).on("load", function () {
   // lenis 플러그인 : 마우스 부드럽게 작동
+
   const lenis = new Lenis();
   lenis.on("scroll", ScrollTrigger.update);
   gsap.ticker.add((time) => {
@@ -72,16 +73,39 @@ const panelsContainer2 = document.querySelector(".container");
 const windowH = panelsContainer2.getBoundingClientRect();
 const Bottomoffset = windowH.width;
 const duration1 = 1;
-$(window).scroll(function () {
-  if ($(this).scrollTop() > Bottomoffset) {
-    $(".sidebtn-wrap").stop().fadeIn(duration1);
-  } else {
-    $(".sidebtn-wrap").stop().fadeOut(duration1);
-  }
-});
+$(window).scroll(function () {});
 // 맨 위로
 $("#btn-top").click(function (e) {
   e.preventDefault();
   $("html, body").stop().animate({ scrollTop: 0 }, 1500);
+  return false;
+});
+
+let currentElement = null;
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > 0) {
+      currentElement = entry.target;
+    }
+  });
+});
+
+const flags = document.querySelectorAll(".move-flag");
+flags.forEach((el) => {
+  io.observe(el);
+});
+
+$("#btn-next-section").click(function (e) {
+  e.preventDefault();
+  let index = Number(currentElement.dataset.index) + 1;
+  if (index >= flags.length) {
+    index = flags.length;
+  }
+  console.log(`#flag${index}`);
+  console.log($(`#flag${index}`));
+  $("html, body")
+    .stop()
+    .animate({ scrollTop: $(`#flag${index}`).offset().top }, 1000);
   return false;
 });

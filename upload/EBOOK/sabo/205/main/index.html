@@ -144,7 +144,7 @@
     <!-- 모바일 팝업 -->
     <header id="header"></header>
 
-    <div class="container">
+    <div id="flag1" class="container move-flag" data-index="1">
       <div class="panel panel1">
         <div class="intro-wrap">
           <h1 class="theme-title"><span>2025</span></h1>
@@ -245,7 +245,11 @@
 
     <div class="articles-container">
       <!-- 소식들들 시작 -->
-      <section class="news-grid-container articles-section">
+      <section
+        id="flag2"
+        class="news-grid-container articles-section move-flag"
+        data-index="2"
+      >
         <p class="section-title">소식들</p>
         <div class="news-bento">
           <div id="knocNow" class="bento-item panel-bg">
@@ -340,7 +344,11 @@
       </section>
       <!-- 인사이트 끝 -->
       <!-- 인사이트 시작 -->
-      <section class="insight-container articles-section">
+      <section
+        id="flag3"
+        class="insight-container articles-section move-flag"
+        data-index="3"
+      >
         <p class="section-title">인사이트</p>
         <div class="insight-bento">
           <div id="knowledge" class="bento-item panel-bg">
@@ -420,7 +428,11 @@
       </section>
       <!-- 인사이트 끝 -->
       <!-- 사람들 시작 -->
-      <section class="peoples-container articles-section">
+      <section
+        id="flag4"
+        class="peoples-container articles-section move-flag"
+        data-index="4"
+      >
         <p class="section-title">사람들</p>
         <div class="peoples-flex">
           <div id="oneTeam" class="peoples-wrap panel-bg">
@@ -506,7 +518,11 @@
       <!-- 사람들 끝 -->
 
       <!-- 커뮤니티  시작 -->
-      <section class="comunity-container articles-section">
+      <section
+        id="flag5"
+        class="comunity-container articles-section move-flag"
+        data-index="5"
+      >
         <p class="section-title">커뮤니티</p>
         <div class="comunity-wrap">
           <div class="events-wrap">
@@ -626,6 +642,13 @@
         <div id="btn-top" class="side-btn">
           <img src="../images/common/up.svg" alt="" />
         </div>
+        <div id="btn-next-section" class="side-btn">
+          <img
+            src="../images/common/up.svg"
+            style="transform: rotate(180deg)"
+            alt=""
+          />
+        </div>
       </div>
       <!-- 푸터 -->
       <footer id="footer_wrap">
@@ -644,5 +667,21 @@
       </footer>
       <!-- 푸터 -->
     </div>
+    <script>
+      let viewport = null;
+      window.onload = () => {
+        const flags = document.querySelectorAll(".move-flag");
+
+        const FLAG_MAX_LENGTH = flags.length;
+        const viewPortHeigth = window.innerHeight;
+        flags.forEach((el) => {
+          const y = el.getBoundingClientRect().y;
+          if (y < viewPortHeigth - 100) {
+            viewport = el;
+          }
+        });
+      };
+      console.log(viewport);
+    </script>
   </body>
 </html>
