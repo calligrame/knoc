@@ -63,6 +63,8 @@
     <!-- css -->
     <link rel="stylesheet" href="../common/css/fonts.css" />
     <link rel="stylesheet" href="../common/css/main.css" />
+
+    <link rel="stylesheet" href="../common/css/popup.css" />
     <!-- js -->
     <script defer src="../common/js/lib/jquery-3.6.4.min.js"></script>
     <script defer src="../common/js/lib/gsap.min.js"></script>
@@ -74,6 +76,7 @@
       src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"
     ></script>
     <script defer src="../common/js/main.js"></script>
+    <script defer src="../common/js/popup.js"></script>
     <title>석유사랑</title>
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]>
@@ -86,6 +89,59 @@
     <![endif]-->
   </head>
   <body>
+    <!-- PC 팝업 -->
+    <div id="layer1" class="pop-layer">
+      <div class="pop-container">
+        <div class="pop-conts">
+          <!--content //-->
+          <a
+            href="https://calligrame.github.io/knoc/upload/EBOOK/sabo/205/sub/result.html"
+            target="_blank"
+            ><img src="../images/main/popup.jpg" alt=""
+          /></a>
+
+          <div class="pop-button-wrap">
+            <div class="btn-l">
+              <a href="#" class="btn-todayClose">오늘 하루 보지 않기</a>
+            </div>
+            <div class="btn-r">
+              <a href="#" class="btn-layerClose">닫기</a>
+            </div>
+          </div>
+
+          <!--// content-->
+        </div>
+      </div>
+    </div>
+    <!-- PC 팝업 -->
+    <!-- 모바일 팝업 -->
+    <div class="dim-layer">
+      <div class="dimBg"></div>
+      <div id="layer2" class="pop-layer">
+        <div class="pop-container">
+          <div class="pop-conts">
+            <!--content //-->
+            <a
+              href="https://calligrame.github.io/knoc/upload/EBOOK/sabo/205/sub/result.html"
+              target="_blank"
+              ><img src="../images/main/popup.jpg" alt=""
+            /></a>
+
+            <div class="pop-button-wrap">
+              <div class="btn-l">
+                <a href="#" class="btn-todayClose">오늘 하루 보지 않기</a>
+              </div>
+              <div class="btn-r">
+                <a href="#" class="btn-layerClose">닫기</a>
+              </div>
+            </div>
+            <!--// content-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모바일 팝업 -->
     <header id="header"></header>
 
     <div class="container">
