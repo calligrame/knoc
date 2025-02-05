@@ -328,6 +328,7 @@ input:checked ~ .tab-content-wrap {
   }
   #header {
     height: 70px;
+    width: 100vw;
   }
   #mobile-full-nav {
     display: block;
@@ -348,6 +349,10 @@ input:checked ~ .tab-content-wrap {
     opacity: 1;
   }
 
+  .nav-container {
+    padding: 0 2em;
+    width: 100%;
+  }
   #page-categories,
   #webzine-title {
     display: none;
