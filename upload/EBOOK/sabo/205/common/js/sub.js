@@ -84,19 +84,6 @@ $(document).ready(function () {
     $(".mob-side-menu-container").removeClass("open");
   });
 
-  //주석 팝업
-  const popCaption = (posX, posY, index) => {
-    const height = popBox.getBoundingClientRect().height;
-    popBox.style.left = posX + "px";
-    popBox.style.top = posY - height + "px";
-    $("#pop > p").text($(`.caption-text-${index}`).text());
-  };
-  $(".annotation").hover(function (e) {
-    $("#pop").toggleClass("active");
-    const index = $(this).data("caption-index");
-    popCaption(e.pageX, e.pageY, index);
-  });
-
   // 현재 페이지 링크 복사
   $("#btn-share").on("click", function () {
     let currentLink = window.location.href;
