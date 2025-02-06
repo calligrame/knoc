@@ -694,6 +694,12 @@ body {
   border-radius: 15px;
   text-align: center;
 }
+.side-btn-long a,
+.side-btn-long a:link,
+.side-btn-long a:visited,
+.side-btn-long a:active {
+  color: #3a3a3a;
+}
 #subscribe {
   background-color: #c3e0ff;
 }
