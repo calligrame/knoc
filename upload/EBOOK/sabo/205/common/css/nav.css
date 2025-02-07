@@ -47,10 +47,6 @@
   position: relative;
 }
 
-.logo-white {
-  background-image: url(/2024_06/img/common/klacc-white.png);
-}
-
 /* 메뉴 햄버거 버튼 */
 .menu {
   background-color: transparent;
@@ -349,6 +345,10 @@ input:checked ~ .tab-content-wrap {
     opacity: 1;
   }
 
+  #header-left p {
+    display: none;
+  }
+
   .nav-container {
     padding: 0 2em;
     width: 100%;
@@ -360,8 +360,8 @@ input:checked ~ .tab-content-wrap {
   #btn_mob_nav {
     display: block;
     z-index: 999;
-    background-color: unset;
-    border-radius: unset;
+    background-color: #3a3a3a;
+    border-radius: 50%;
   }
   #btn_mob_nav svg {
     width: 36px;
@@ -371,7 +371,7 @@ input:checked ~ .tab-content-wrap {
     display: none;
   }
   .logo {
-    width: 70% !important;
+    width: 100%;
   }
   .logo img {
     width: 100%;
