@@ -1028,4 +1028,11 @@ a#btn-unsubscribe:link {
   .cards-title {
     font-size: 1.25rem;
   }
+  #footer_wrap {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .footer-info {
+    line-height: 1.8rem;
+  }
 }

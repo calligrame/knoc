@@ -861,4 +861,11 @@ body {
   .peoples-thumb img {
     height: unset;
   }
+  #footer_wrap {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .footer-info {
+    line-height: 1.8rem;
+  }
 }
