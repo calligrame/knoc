@@ -464,7 +464,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "knowledge knowledge knowledge trend trend issue issue"
-    "knowledge knowledge knowledge homoludens homoludens homoludens homoludens";
+    "knowledge knowledge knowledge homoludens homoludens aiknoc aiknoc";
   width: 1440px;
   gap: 1vw;
 }
@@ -495,6 +495,10 @@ body {
 }
 .insight-bento .bento-item:nth-child(4) {
   grid-area: homoludens;
+  padding: 12vh 0;
+}
+.insight-bento .bento-item:nth-child(5) {
+  grid-area: aiknoc;
   padding: 12vh 0;
 }
 

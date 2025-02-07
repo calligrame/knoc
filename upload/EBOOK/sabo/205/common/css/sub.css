@@ -51,6 +51,7 @@ a:visited {
   position: relative;
   animation: down 1.5s infinite;
   -webkit-animation: down 1.5s infinite;
+  cursor: pointer;
   &::before {
     content: "";
     position: absolute;

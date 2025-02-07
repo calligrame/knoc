@@ -96,4 +96,10 @@ $(document).ready(function () {
     alert("URL이 복사되었습니다.");
     // showToast("URL이 복사되었습니다.");
   });
+  $(".scroll").on("click", function (e) {
+    e.preventDefault();
+    $("html, body")
+      .stop()
+      .animate({ scrollTop: $(".article-body-container").offset().top }, 500);
+  });
 });
