@@ -26,20 +26,6 @@ $(window).on("load", function () {
   gsap.ticker.lagSmoothing(0);
 });
 
-// let scrollTween = gsap.to(panels, {
-//   xPercent: -100 * (panels.length - 1),
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: "#panels-container",
-//     start: "top top",
-//     end: () => "+=" + (panelsContainer.offsetWidth - innerWidth),
-//     pin: true,
-//     scrub: true,
-//     invalidateOnRefresh: true,
-//   },
-// });
-/* Panels */
-
 ScrollTrigger.matchMedia({
   "(min-width: 768px)": function () {
     gsap.to(sections, {
