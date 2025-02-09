@@ -51,6 +51,7 @@ a:visited {
   position: relative;
   animation: down 1.5s infinite;
   -webkit-animation: down 1.5s infinite;
+  cursor: pointer;
   &::before {
     content: "";
     position: absolute;
@@ -139,7 +140,7 @@ a:visited {
 }
 /* 리드문 영역 시작 */
 .body-lead-wrap {
-  background-color: #f3f3f3;
+  background-color: #e8f1f9;
   width: 100%;
   min-height: 300px;
   margin-bottom: 70px;
@@ -250,6 +251,11 @@ a:visited {
   margin-bottom: 20px;
   background-size: cover;
   background-position: center center;
+  overflow: hidden;
+}
+
+.r-article-thumbnail img {
+  width: 100%;
 }
 .r-category,
 .r-title {
@@ -266,9 +272,7 @@ a:visited {
 .relative-card:nth-child(2) .r-article-thumbnail {
   background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/visual/s1_1_visual.jpg);
 }
-.relative-card:nth-child(3) .r-article-thumbnail {
-  background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/main/cont2-wrap3-2.png);
-}
+
 .relative-card:nth-child(4) .r-article-thumbnail {
   background-image: url(https://www.knoc.co.kr/upload/EBOOK/sabo/204/images/main/cont2-wrap3-6.png);
 }
@@ -468,6 +472,19 @@ h3.cardTitle {
   display: flex;
   gap: 0.9rem;
 }
+
+.third-text-container {
+  display: flex;
+  gap: 1.5rem;
+}
+.half-text-container .content_image {
+  flex: 0.5;
+  overflow: hidden;
+}
+.half-text-container .text-part {
+  flex: 1.5;
+}
+
 /* 아이콘 - 텍스트 나란히 배치 */
 .icon-text-container {
   display: flex;
@@ -564,6 +581,7 @@ h3.cardTitle {
 }
 .profile-img {
   width: 100%;
+  transform: scale(-1, 1);
 }
 .profile-name {
   font-size: 1.5rem;
@@ -576,6 +594,19 @@ h3.cardTitle {
 .rounded-title p {
   color: white;
   font-weight: 700;
+}
+#event a,
+#event .rounded-title {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#event a:hover .rounded-title {
+  background-color: white;
+
+  border: 1px solid #03446a;
+}
+#event a:hover .rounded-title p {
+  color: #03446a;
 }
 .temp-box {
   flex: 1;
@@ -592,6 +623,10 @@ h3.cardTitle {
 }
 
 /* 주석 팝업 */
+.annotation {
+  color: #03446a;
+  font-weight: 700;
+}
 #pop {
   display: none;
   position: absolute;
@@ -634,6 +669,12 @@ h3.cardTitle {
   padding: 10px;
   border-radius: 15px;
   text-align: center;
+}
+.side-btn-long a,
+.side-btn-long a:link,
+.side-btn-long a:visited,
+.side-btn-long a:active {
+  color: #3a3a3a;
 }
 #subscribe {
   background-color: #c3e0ff;
@@ -697,6 +738,10 @@ h3.cardTitle {
 }
 .winner-info {
   margin-bottom: 20px !important;
+}
+.colored-box {
+  background-color: #f0f3f5;
+  padding: 1.25rem;
 }
 /* 코너별 */
 /* 1. KNOC은 지금 */
@@ -766,6 +811,22 @@ h3.cardTitle {
 .special-grid-container2 .grid-item:nth-child(2n + 1) {
   border-right: 1px solid #3a3a3a;
 }
+.special-grid-container3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr) repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.special-grid-container3 .grid-item:nth-child(2),
+.special-grid-container3 .grid-item:nth-child(3) {
+  border-top: 1px solid #3a3a3a;
+}
+.special-grid-container3 .grid-item:nth-child(2),
+.special-grid-container3 .grid-item:nth-child(5) {
+  border-right: 1px solid #3a3a3a;
+}
+.special-grid-container3 .grid-head:nth-child(1) {
+  border-bottom: 1px solid white;
+}
 
 #footer_wrap {
   width: 100%;
@@ -788,7 +849,7 @@ h3.cardTitle {
 }
 
 #btn-unsubscribe {
-  background-color: #5c8fad;
+  background-color: #5c7bad;
 }
 #btn-unsubscribe a {
   color: white;
@@ -822,7 +883,7 @@ a#btn-unsubscribe:link {
 }
 
 #btn-unsubscribe:hover {
-  background-color: white;
+  background-color: rgb(56, 63, 141);
   color: #777;
 }
 
@@ -966,5 +1027,12 @@ a#btn-unsubscribe:link {
   }
   .cards-title {
     font-size: 1.25rem;
+  }
+  #footer_wrap {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .footer-info {
+    line-height: 1.8rem;
   }
 }
