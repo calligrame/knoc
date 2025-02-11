@@ -1,6 +1,3 @@
-@import url(../css/common.css);
-@import url(../css/nav.css);
-
 /* 공통 */
 .thumb {
   position: absolute;
@@ -97,8 +94,9 @@ body {
   overflow: hidden;
 }
 
-#myVideo {
+.video-container {
   width: 100%;
+  overflow: hidden;
 }
 .video-desc {
   position: absolute;
@@ -727,9 +725,8 @@ body {
   }
 
   #myVideo {
+    width: auto;
     height: 100%;
-    width: 100%;
-    overflow: hidden;
   }
   .panel:nth-child(1) {
     flex-direction: column;
