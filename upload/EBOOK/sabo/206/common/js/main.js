@@ -67,8 +67,8 @@ $("#btn-top").click(function (e) {
   return false;
 });
 
+// 섹션 이동 버튼
 let currentElement = null;
-
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
@@ -88,10 +88,27 @@ $("#btn-next-section").click(function (e) {
   if (index >= flags.length) {
     index = flags.length;
   }
-  console.log(`#flag${index}`);
-  console.log($(`#flag${index}`));
   $("html, body")
     .stop()
     .animate({ scrollTop: $(`#flag${index}`).offset().top }, 1000);
   return false;
+});
+
+// lazy loading
+const options = {
+  root: null,
+  threshold: 0,
+};
+const lazyIO = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.src = entry.target.dataset.src;
+      observer.unobserve(entry.target);
+    }
+  });
+}, options);
+
+const images = document.querySelectorAll(".lazy");
+images.forEach((el) => {
+  lazyIO.observe(el);
 });
