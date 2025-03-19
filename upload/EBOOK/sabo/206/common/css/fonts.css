@@ -2,40 +2,40 @@
   font-family: "Paperlogy-Black";
   src: url("../fonts/Paperlogy-9Black.ttf") format("truetype");
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("../fonts/Pretendard-Regular.woff") format("woff");
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-Bold";
   src: url("../fonts/Pretendard-Bold.woff") format("woff");
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-ExtraBold";
   src: url("../fonts/Pretendard-ExtraBold.woff") format("woff");
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Paperlogy-Regular";
   src: url("../fonts/Paperlogy-4Regular.ttf") format("truetype");
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Paperlogy-SemiBold";
   src: url("../fonts/Paperlogy-6SemiBold.ttf") format("truetype");
   font-style: normal;
-}
-
-@font-face {
-  font-family: "ChosunCentennial";
-  src: url("../fonts/ChosunCentennial_ttf.ttf") format("truetype");
-  font-style: normal;
+  font-display: swap;
 }
