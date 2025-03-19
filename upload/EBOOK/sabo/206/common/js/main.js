@@ -97,11 +97,13 @@ $("#btn-next-section").click(function (e) {
 // lazy loading
 const options = {
   root: null,
+  rootMargin: "50%",
   threshold: 0,
 };
 const lazyIO = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
+      console.log(entry);
       entry.target.src = entry.target.dataset.src;
       observer.unobserve(entry.target);
     }
