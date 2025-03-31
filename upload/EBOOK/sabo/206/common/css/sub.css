@@ -222,6 +222,7 @@ a:visited {
 .text-content-wrap {
   width: 960px;
   max-width: 960px;
+  overflow-x: hidden;
 }
 .article-body-container p {
   font-size: var(--KNOC-article-text-font-size);
@@ -461,6 +462,10 @@ h3.cardTitle {
   gap: 1.5rem;
 }
 
+.horizontal-text-container {
+  display: flex;
+  overflow: hidden;
+}
 .half-text-container .content_image {
   flex: 1;
   overflow: hidden;
@@ -472,16 +477,19 @@ h3.cardTitle {
   display: flex;
   gap: 0.9rem;
 }
+.half-pic-container .content_image {
+  width: auto;
+}
 
 .third-text-container {
   display: flex;
   gap: 1.5rem;
 }
-.half-text-container .content_image {
+.third-text-container .content_image {
   flex: 0.5;
   overflow: hidden;
 }
-.half-text-container .text-part {
+.third-text-container .text-part {
   flex: 1.5;
 }
 
@@ -508,8 +516,6 @@ h3.cardTitle {
 /* 오일실록 표(다음호에 지울 거) */
 .grid-container {
   display: grid;
-  grid-template-rows: repeat(9, 1fr);
-  grid-template-columns: 1fr 4fr 4fr;
 }
 
 .grid-container {
@@ -620,30 +626,6 @@ h3.cardTitle {
 }
 .challenge-results-wrap .content_image {
   width: 20%;
-}
-
-/* 주석 팝업 */
-.annotation {
-  color: #03446a;
-  font-weight: 700;
-}
-#pop {
-  display: none;
-  position: absolute;
-  left: 0;
-  max-width: 600px;
-  width: auto;
-  height: auto;
-  right: 0;
-  background-color: white;
-  border: 1px solid #777;
-  padding: 20px 10px;
-}
-
-#pop.active {
-  display: block;
-  left: 0;
-  right: 0;
 }
 
 /* 위로, 공유하기 버튼 */
@@ -763,6 +745,12 @@ h3.cardTitle {
   text-align: center;
   font-size: 2.5rem !important;
 }
+/* 2. 이슈1 */
+#issue1.grid-container {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: auto repeat(4, 1fr);
+}
+
 /* 7. 스페셜이슈 */
 .special-grid-container {
   display: grid;
@@ -774,18 +762,35 @@ h3.cardTitle {
   grid-column: span 2;
   border-right: 3px solid white;
 }
-/* 14. ai+knoc */
+/* 10. ai+knoc */
 .list-title {
   margin-bottom: 20px;
 }
-.dot-frame ul {
+.aiknoc.dot-frame {
+}
+.aiknoc.dot-frame ol > li {
+  list-style-type: decimal;
+}
+.aiknoc.dot-frame ol > li::marker {
+  list-style-type: decimal;
+  font-size: var(--KNOC-article-text-font-size);
+}
+.aiknoc.dot-frame ul {
   padding-left: 0;
   margin-left: 0;
 }
-.dot-frame li {
-  font-size: var(--KNOC-article-text-font-size);
+.aiknoc.dot-frame ul > li {
+  font-size: 1rem;
   list-style: disc;
+  line-height: 1.875;
   margin-bottom: 20px;
+  margin-left: 18px;
+}
+
+/* 14. 멘토인터뷰 */
+#mentorInterview.side-menu-item-wrap {
+  overflow-y: scroll;
+  height: 600px;
 }
 
 .green {
