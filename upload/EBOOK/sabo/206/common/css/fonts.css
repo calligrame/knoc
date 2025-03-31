@@ -1,0 +1,43 @@
+/* Paperlogy */
+@font-face {
+  font-family: "Paperlogy-Black";
+  src: url("../fonts/Paperlogy-9Black.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy-Regular";
+  src: url("../fonts/Paperlogy-4Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy-SemiBold";
+  src: url("../fonts/Paperlogy-6SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Pretendard */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("../fonts/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("../fonts/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  src: url("../fonts/Pretendard-ExtraBold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
