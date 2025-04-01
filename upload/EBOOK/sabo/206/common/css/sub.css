@@ -750,6 +750,46 @@ h3.cardTitle {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: auto repeat(4, 1fr);
 }
+.text-underline-gray {
+  position: relative;
+}
+.text-underline-gray::after {
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: #dedede;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: 1px;
+  z-index: -1;
+}
+.text-highlight-gray {
+  background-color: #d3d3d3;
+  font-weight: 700;
+  padding: 5px;
+}
+.text-underline-lime {
+  position: relative;
+}
+.text-underline-lime::after {
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: #d2ffaa;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: 1px;
+  z-index: -1;
+}
+.text-highlight-lime {
+  background-color: #d2ffaa;
+  font-weight: 700;
+  padding: 5px;
+}
 
 /* 7. 스페셜이슈 */
 .special-grid-container {
