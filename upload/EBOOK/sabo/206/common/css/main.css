@@ -707,8 +707,30 @@ body {
 }
 
 @media all and (max-width: 768px) {
+  .theme-title {
+    font-size: 1.5rem;
+  }
+  .theme-desc {
+    font-size: 0.8rem;
+  }
   .articles-section {
     flex-direction: column;
+  }
+  .sidebtn-wrap {
+    bottom: 50px;
+  }
+  .side-btn {
+    width: 30px;
+    height: 30px;
+  }
+  .side-btn-long {
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+  .side-btn-long img {
+    width: 30px;
+    height: 30px;
   }
   .intro-container {
     width: 100vw;
