@@ -53,17 +53,22 @@
     />
 
     <!-- css -->
+
     <link
       rel="stylesheet preload prefetch"
       href="../common/css/fonts.css"
       as="style"
     />
+
     <link
       rel="stylesheet preload prefetch"
       href="../common/css/common.css"
       as="style"
     />
+    <link rel="stylesheet" href="../common/css/slick.css" />
+    <link rel="stylesheet" href="../common/css/slick-theme.css" />
     <!-- <link rel="stylesheet" href="../common/css/nav.css" /> -->
+
     <link rel="stylesheet" href="../common/css/main.css" />
 
     <title>석유사랑</title>
@@ -80,15 +85,9 @@
   </head>
   <body>
     <div id="header"></div>
-    <div id="flag1" class="container move-flag" data-index="1">
-      <div class="panel panel1">
-        <div class="arrow">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <div class="intro-container">
+    <div class="main-container">
+      <div id="flag1" class="main-slide-container move-flag" data-index="1">
+        <div class="intro-container slide-item">
           <div class="theme-desc-wrap">
             <h2 class="theme-title">46 YEARS</h2>
             <p class="theme-desc">
@@ -114,526 +113,527 @@
             </video>
           </div>
         </div>
+        <section class="slide-item">
+          <div class="news-container">
+            <div class="thumb-text-wrap">
+              <h5 class="category">KNOC는 지금</h5>
+              <h3 class="title">
+                46년, <br />대한민국 에너지 자립의 새 역사를 씁니다.
+              </h3>
+            </div>
+            <a class="btn-article" href="../sub/sub1.html">바로가기</a>
+          </div>
+          <span class="news-thumb thumb">
+            <img
+              class="lazy"
+              data-src="../images/main/thumb-knocnow-slide.jpg"
+              alt=""
+            />
+          </span>
+        </section>
+        <section class="slide-item">
+          <div class="news-container">
+            <div class="thumb-text-wrap">
+              <h5 class="category">알쓸유잡 시즌2</h5>
+              <h3 class="title">
+                사내 석유전문가, <br />
+                이상현 과장과 코지의 Q&A <br />
+                2편
+              </h3>
+            </div>
+            <a class="btn-article" href="../sub/sub6.html">바로가기</a>
+          </div>
+          <span class="news-thumb thumb">
+            <img
+              class="lazy"
+              data-src="../images/main/thumb-knowledge-slide.jpg"
+              alt=""
+            />
+          </span>
+        </section>
+        <section class="slide-item">
+          <div class="news-container">
+            <div class="thumb-text-wrap">
+              <h5 class="category">원팀KNOC</h5>
+              <h3 class="title">
+                한국석유공사 여러분들의 행복한 외출을 위하여!
+                <br />
+                2025 프로농구 리그 경기 단체 관람 이벤트
+              </h3>
+            </div>
+            <a class="btn-article" href="../sub/sub12.html">바로가기</a>
+          </div>
+          <span class="news-thumb thumb">
+            <img
+              class="lazy"
+              data-src="../images/main/thumb-happygoout-slide.jpg"
+              alt=""
+            />
+          </span>
+        </section>
       </div>
+      <div class="articles-container">
+        <!-- 소식들 시작 -->
+        <section
+          id="flag2"
+          class="news-grid-container articles-section move-flag"
+          data-index="2"
+        >
+          <p class="section-title">소식들</p>
+          <div class="news-bento">
+            <div id="knocNow" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub1.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">KNOC는 지금</p>
+                  <b class="title"
+                    >“Where there is a will, there is a way.” <br />
+                    도전적인 목표를 설정해, <br />
+                    반드시 성공하겠다는 의지로 노력해 나갑시다!
+                  </b>
+                </div>
 
-      <section class="panel panel-bg">
-        <div class="news-container">
-          <div class="thumb-text-wrap">
-            <h5 class="category">KNOC는 지금</h5>
-            <h3 class="title">
-              46년, <br />대한민국 에너지 자립의 새 역사를 씁니다.
-            </h3>
-          </div>
-          <a class="btn-article" href="../sub/sub1.html">바로가기</a>
-        </div>
-        <span class="news-thumb thumb">
-          <img
-            class="lazy"
-            data-src="../images/main/thumb-knocnow-slide.jpg"
-            alt=""
-          />
-        </span>
-      </section>
-      <section class="panel panel-bg">
-        <div class="news-container">
-          <div class="thumb-text-wrap">
-            <h5 class="category">알쓸유잡 시즌2</h5>
-            <h3 class="title">
-              사내 석유전문가, <br />
-              이상현 과장과 코지의 Q&A <br />
-              2편
-            </h3>
-          </div>
-          <a class="btn-article" href="../sub/sub6.html">바로가기</a>
-        </div>
-        <span class="news-thumb thumb">
-          <img
-            class="lazy"
-            data-src="../images/main/thumb-knowledge-slide.jpg"
-            alt=""
-          />
-        </span>
-      </section>
-      <section class="panel panel-bg">
-        <div class="news-container">
-          <div class="thumb-text-wrap">
-            <h5 class="category">원팀KNOC</h5>
-            <h3 class="title">
-              한국석유공사 여러분들의 행복한 외출을 위하여!
-              <br />
-              2025 프로농구 리그 경기 단체 관람 이벤트
-            </h3>
-          </div>
-          <a class="btn-article" href="../sub/sub12.html">바로가기</a>
-        </div>
-        <span class="news-thumb thumb">
-          <img
-            class="lazy"
-            data-src="../images/main/thumb-happygoout-slide.jpg"
-            alt=""
-          />
-        </span>
-      </section>
-    </div>
-
-    <div class="articles-container">
-      <!-- 소식들 시작 -->
-      <section
-        id="flag2"
-        class="news-grid-container articles-section move-flag"
-        data-index="2"
-      >
-        <p class="section-title">소식들</p>
-        <div class="news-bento">
-          <div id="knocNow" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub1.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">KNOC는 지금</p>
-                <b class="title"
-                  >“Where there is a will, there is a way.” <br />
-                  도전적인 목표를 설정해, <br />
-                  반드시 성공하겠다는 의지로 노력해 나갑시다!
-                </b>
-              </div>
-
-              <span class="news-thumb thumb">
-                <img
+                <span class="news-thumb thumb">
+                  <!-- <img
                   loading="lazy"
                   src="../images/main/thumb-knocnow.webp"
                   alt=""
-                />
-              </span>
-            </a>
-          </div>
-
-          <div id="issue1" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub2.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">이슈1</p>
-                <b class="title"
-                  >2025년, <br />
-                  우리나라의 에너지 안보를 지키는 <br />선봉장이 되겠습니다.
-                  <br />
-                  -광개토(廣開土) 프로젝트</b
-                >
-              </div>
-              <span class="news-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-issue1.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-          <div id="issue2" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub3.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">이슈2</p>
-                <b class="title"
-                  >데이터를 분석해 <br />혁신적이고 창의적인 아이디어를
-                  <br />제안합니다!
-                </b>
-              </div>
-              <span class="insight-thumb thumb">
-                <img
-                  src="../images/main/thumb-issue2.webp"
-                  alt=""
-                  loading="lazy"
-                />
-              </span>
-            </a>
-          </div>
-          <div id="familyKnoc" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub4.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">Family KNOC</p>
-                <b class="title"
-                  >K-직장인은 <br />
-                  사내 밴드 활동에도 <br />
-                  열정을 담습니다!
-                </b>
-              </div>
-              <span class="insight-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-familyknoc.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-          <div id="news" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub5.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">뉴스</p>
-                <b class="title">최근 공사 주요 이슈 </b>
-              </div>
-              <span class="insight-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-news.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- 인사이트 끝 -->
-      <!-- 인사이트 시작 -->
-      <section
-        id="flag3"
-        class="insight-container articles-section move-flag"
-        data-index="3"
-      >
-        <p class="section-title">인사이트</p>
-        <div class="insight-bento">
-          <div id="knowledge" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub6.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">알쓸유잡 시즌2</p>
-                <b class="title"
-                  >첫 번째 석유 이야기,<br />
-                  ‘석유의 생성과 발견’</b
-                >
-              </div>
-              <span class="insight-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-knowledge.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-          <div id="energeTrend" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub7.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">에너지 트렌드</p>
-                <b class="title"
-                  >2025년 트럼프 정부 2기 출범,<br />
-                  에너지 물류 선점을 둘러싼 경쟁
-                  <br />
-                  <span class="subtitle"
-                    >김연규 한양대학교 국제대학원장</span
-                  ></b
-                >
-              </div>
-              <span class="insight-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-energytrend.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-          <div id="oilhistory" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub8.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">오일실록</p>
-                <b class="title"
-                  >세계 최초의 석유 발견사와 <br />
-                  현재의 석유 발굴 및 생산 기술 <br /><span class="subtitle"
-                    >한양대 자원환경공학과 교수 이근상</span
-                  >
-                </b>
-              </div>
-              <span class="insight-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-oilhistory.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-          <div id="homoludens" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub9.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">호모루덴스의 기후위기</p>
-                <b class="title"
-                  >자세히 보아야 아름답다 <br />
-                  <span class="subtitle">- 느린 여행부터 재생 여행까지 -</span>
-                </b>
-              </div>
-              <span class="insight-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-homoludens.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-          <div id="aiKnoc" class="bento-item panel-bg">
-            <a class="main-link" href="../sub/sub14.html">
-              <div class="thumb-text-wrap-small">
-                <p class="category">AI+KNOC</p>
-                <b class="title">AI+KNOC </b>
-              </div>
-              <span class="insight-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-aiknoc.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- 인사이트 끝 -->
-      <!-- 사람들 시작 -->
-      <section
-        id="flag4"
-        class="peoples-container articles-section move-flag"
-        data-index="4"
-      >
-        <p class="section-title">사람들</p>
-        <div class="peoples-flex">
-          <div id="oneTeam" class="peoples-wrap panel-bg">
-            <a class="main-link" href="../sub/sub10.html">
-              <div class="peoples-title-wrap">
-                <div class="thumb-text-wrap-small">
-                  <p class="category">원팀 KNOC</p>
-                  <b class="title"
-                    >2025년 새해에도 우리는 <br />
-                    ‘원 팀(One Team)’이니까!
-                  </b>
-                </div>
-              </div>
-              <span class="peoples-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-oneteam.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-          <div id="challengers" class="peoples-wrap panel-bg">
-            <a class="main-link" href="../sub/sub11.html">
-              <div class="peoples-title-wrap">
-                <div class="thumb-text-wrap-small">
-                  <p class="category">오일 챌린저스</p>
-                  <b class="title"
-                    >한 걸음, 한 걸음 목표에 가까워지네
-                    <br />
-                    첫 번째 챌린지 _ 5일 만 보 걷기
-                  </b>
-                </div>
-              </div>
-              <span class="peoples-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-challengers.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-          <div id="mento" class="peoples-wrap panel-bg">
-            <a class="main-link" href="../sub/sub12.html">
-              <div class="peoples-title-wrap">
-                <div class="thumb-text-wrap-small">
-                  <p class="category">멘토 인터뷰</p>
-                  <b class="title"
-                    >단단한 개인의 연결이 <br />
-                    ‘다정’이 돼요 - 김민섭 작가</b
-                  >
-                </div>
-              </div>
-
-              <span class="peoples-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-mentor.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-          <div id="diy" class="peoples-wrap panel-bg">
-            <a class="main-link" href="../sub/sub13.html">
-              <div class="peoples-title-wrap">
-                <div class="thumb-text-wrap-small">
-                  <p class="category">행복한 DIY</p>
-                  <b class="title"
-                    >2025년 나만의 손글씨로 <br />
-                    나의 소망 적기</b
-                  >
-                </div>
-              </div>
-              <span class="peoples-thumb thumb">
-                <img
-                  loading="lazy"
-                  src="../images/main/thumb-happydiy.webp"
-                  alt=""
-                />
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- 사람들 끝 -->
-
-      <!-- 커뮤니티  시작 -->
-      <section
-        id="flag5"
-        class="comunity-container articles-section move-flag"
-        data-index="5"
-      >
-        <p class="section-title">커뮤니티</p>
-        <div class="comunity-wrap">
-          <div class="events-wrap">
-            <div class="event-item">
-              <a class="main-link" href="../sub/result.html">
-                <div class="content-thumbnail">
-                  <img
-                    loading="lazy"
-                    src="../images/main/cont3-img1.jpg"
-                    alt=""
-                  />
-                </div>
+                /> -->
+                </span>
               </a>
             </div>
-            <div class="event-item">
-              <div id="event" class="content-wrap flex-item">
-                <a class="main-link" href="../sub/sub15.html">
+
+            <div id="issue1" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub2.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">이슈1</p>
+                  <b class="title"
+                    >2025년, <br />
+                    우리나라의 에너지 안보를 지키는 <br />선봉장이 되겠습니다.
+                    <br />
+                    -광개토(廣開土) 프로젝트</b
+                  >
+                </div>
+                <span class="news-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-issue1.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="issue2" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub3.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">이슈2</p>
+                  <b class="title"
+                    >데이터를 분석해 <br />혁신적이고 창의적인 아이디어를
+                    <br />제안합니다!
+                  </b>
+                </div>
+                <span class="insight-thumb thumb">
+                  <img
+                    src="../images/main/thumb-issue2.webp"
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="familyKnoc" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub4.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">Family KNOC</p>
+                  <b class="title"
+                    >K-직장인은 <br />
+                    사내 밴드 활동에도 <br />
+                    열정을 담습니다!
+                  </b>
+                </div>
+                <span class="insight-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-familyknoc.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="news" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub5.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">뉴스</p>
+                  <b class="title">최근 공사 주요 이슈 </b>
+                </div>
+                <span class="insight-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-news.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- 인사이트 끝 -->
+        <!-- 인사이트 시작 -->
+        <section
+          id="flag3"
+          class="insight-container articles-section move-flag"
+          data-index="3"
+        >
+          <p class="section-title">인사이트</p>
+          <div class="insight-bento">
+            <div id="knowledge" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub6.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">알쓸유잡 시즌2</p>
+                  <b class="title"
+                    >첫 번째 석유 이야기,<br />
+                    ‘석유의 생성과 발견’</b
+                  >
+                </div>
+                <span class="insight-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-knowledge.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="energeTrend" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub7.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">에너지 트렌드</p>
+                  <b class="title"
+                    >2025년 트럼프 정부 2기 출범,<br />
+                    에너지 물류 선점을 둘러싼 경쟁
+                    <br />
+                    <span class="subtitle"
+                      >김연규 한양대학교 국제대학원장</span
+                    ></b
+                  >
+                </div>
+                <span class="insight-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-energytrend.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="oilhistory" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub8.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">오일실록</p>
+                  <b class="title"
+                    >세계 최초의 석유 발견사와 <br />
+                    현재의 석유 발굴 및 생산 기술 <br /><span class="subtitle"
+                      >한양대 자원환경공학과 교수 이근상</span
+                    >
+                  </b>
+                </div>
+                <span class="insight-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-oilhistory.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="homoludens" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub9.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">호모루덴스의 기후위기</p>
+                  <b class="title"
+                    >자세히 보아야 아름답다 <br />
+                    <span class="subtitle"
+                      >- 느린 여행부터 재생 여행까지 -</span
+                    >
+                  </b>
+                </div>
+                <span class="insight-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-homoludens.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="aiKnoc" class="bento-item panel-bg">
+              <a class="main-link" href="../sub/sub14.html">
+                <div class="thumb-text-wrap-small">
+                  <p class="category">AI+KNOC</p>
+                  <b class="title">AI+KNOC </b>
+                </div>
+                <span class="insight-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-aiknoc.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- 인사이트 끝 -->
+        <!-- 사람들 시작 -->
+        <section
+          id="flag4"
+          class="peoples-container articles-section move-flag"
+          data-index="4"
+        >
+          <p class="section-title">사람들</p>
+          <div class="peoples-flex">
+            <div id="oneTeam" class="peoples-wrap panel-bg">
+              <a class="main-link" href="../sub/sub10.html">
+                <div class="peoples-title-wrap">
+                  <div class="thumb-text-wrap-small">
+                    <p class="category">원팀 KNOC</p>
+                    <b class="title"
+                      >2025년 새해에도 우리는 <br />
+                      ‘원 팀(One Team)’이니까!
+                    </b>
+                  </div>
+                </div>
+                <span class="peoples-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-oneteam.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="challengers" class="peoples-wrap panel-bg">
+              <a class="main-link" href="../sub/sub11.html">
+                <div class="peoples-title-wrap">
+                  <div class="thumb-text-wrap-small">
+                    <p class="category">오일 챌린저스</p>
+                    <b class="title"
+                      >한 걸음, 한 걸음 목표에 가까워지네
+                      <br />
+                      첫 번째 챌린지 _ 5일 만 보 걷기
+                    </b>
+                  </div>
+                </div>
+                <span class="peoples-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-challengers.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="mento" class="peoples-wrap panel-bg">
+              <a class="main-link" href="../sub/sub12.html">
+                <div class="peoples-title-wrap">
+                  <div class="thumb-text-wrap-small">
+                    <p class="category">멘토 인터뷰</p>
+                    <b class="title"
+                      >단단한 개인의 연결이 <br />
+                      ‘다정’이 돼요 - 김민섭 작가</b
+                    >
+                  </div>
+                </div>
+
+                <span class="peoples-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-mentor.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+            <div id="diy" class="peoples-wrap panel-bg">
+              <a class="main-link" href="../sub/sub13.html">
+                <div class="peoples-title-wrap">
+                  <div class="thumb-text-wrap-small">
+                    <p class="category">행복한 DIY</p>
+                    <b class="title"
+                      >2025년 나만의 손글씨로 <br />
+                      나의 소망 적기</b
+                    >
+                  </div>
+                </div>
+                <span class="peoples-thumb thumb">
+                  <img
+                    loading="lazy"
+                    src="../images/main/thumb-happydiy.webp"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- 사람들 끝 -->
+
+        <!-- 커뮤니티  시작 -->
+        <section
+          id="flag5"
+          class="comunity-container articles-section move-flag"
+          data-index="5"
+        >
+          <p class="section-title">커뮤니티</p>
+          <div class="comunity-wrap">
+            <div class="events-wrap">
+              <div class="event-item">
+                <a class="main-link" href="../sub/result.html">
                   <div class="content-thumbnail">
-                    <img src="../images/main/cont3-img2.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="../images/main/cont3-img1.jpg"
+                      alt=""
+                    />
                   </div>
                 </a>
               </div>
+              <div class="event-item">
+                <div id="event" class="content-wrap flex-item">
+                  <a class="main-link" href="../sub/sub15.html">
+                    <div class="content-thumbnail">
+                      <img src="../images/main/cont3-img2.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="social-wrap">
+              <div id="instagram" class="social-item">
+                <div class="social-title">
+                  <p>INSTAGRAM</p>
+                </div>
+                <div class="line mt20 mb20"></div>
+                <div class="social-thumbnail-wrap">
+                  <a
+                    href="https://www.instagram.com/p/DFJoqSXMby1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                    target="_blank"
+                    ><img
+                      class="insta-thumb-img"
+                      src="../images/main/insta-1.jpg"
+                      alt=""
+                      loading="lazy"
+                  /></a>
+                  <a
+                    href="https://www.instagram.com/p/DFCotr0Sta6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                    target="_blank"
+                    ><img
+                      class="insta-thumb-img"
+                      src="../images/main/insta-2.jpg"
+                      alt=""
+                      loading="lazy"
+                  /></a>
+                </div>
+              </div>
+              <div id="youtube" class="social-item">
+                <div class="social-title">
+                  <p>YOUTUBE</p>
+                </div>
+                <div class="line mt20 mb20"></div>
+                <div class="social-thumbnail-wrap">
+                  <a
+                    href="https://youtu.be/fcV2g8Qnyj8?si=RW2sCvTFIa10Z-il"
+                    target="_blank"
+                    ><img
+                      class="youtube-thumb-img"
+                      src="../images/main/youtube-1.webp"
+                      alt=""
+                      loading="lazy"
+                  /></a>
+                  <a
+                    href="https://youtu.be/XsWLyp1muNY?si=qiko0WgGtfSFSoBH"
+                    target="_blank"
+                    ><img
+                      class="youtube-thumb-img"
+                      src="../images/main/youtube-2.webp"
+                      alt=""
+                      loading="lazy"
+                  /></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="social-wrap">
-            <div id="instagram" class="social-item">
-              <div class="social-title">
-                <p>INSTAGRAM</p>
-              </div>
-              <div class="line mt20 mb20"></div>
-              <div class="social-thumbnail-wrap">
-                <a
-                  href="https://www.instagram.com/p/DFJoqSXMby1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                  target="_blank"
-                  ><img
-                    class="insta-thumb-img"
-                    src="../images/main/insta-1.jpg"
-                    alt=""
-                    loading="lazy"
-                /></a>
-                <a
-                  href="https://www.instagram.com/p/DFCotr0Sta6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                  target="_blank"
-                  ><img
-                    class="insta-thumb-img"
-                    src="../images/main/insta-2.jpg"
-                    alt=""
-                    loading="lazy"
-                /></a>
-              </div>
-            </div>
-            <div id="youtube" class="social-item">
-              <div class="social-title">
-                <p>YOUTUBE</p>
-              </div>
-              <div class="line mt20 mb20"></div>
-              <div class="social-thumbnail-wrap">
-                <a
-                  href="https://youtu.be/fcV2g8Qnyj8?si=RW2sCvTFIa10Z-il"
-                  target="_blank"
-                  ><img
-                    class="youtube-thumb-img"
-                    src="../images/main/youtube-1.webp"
-                    alt=""
-                    loading="lazy"
-                /></a>
-                <a
-                  href="https://youtu.be/XsWLyp1muNY?si=qiko0WgGtfSFSoBH"
-                  target="_blank"
-                  ><img
-                    class="youtube-thumb-img"
-                    src="../images/main/youtube-2.webp"
-                    alt=""
-                    loading="lazy"
-                /></a>
-              </div>
-            </div>
+        </section>
+        <!-- 커뮤니티 끝 -->
+        <div class="sidebtn-wrap">
+          <ul class="quickmenu-wrap">
+            <li id="subscribe" class="side-btn-long">
+              <a
+                href="https://www.knoc.co.kr/sub05/reader_participate_write.jsp"
+                target="_blank"
+                ><div class="tac">
+                  <img
+                    src="../images/common/subscribe-ico.png"
+                    alt="insta"
+                    width="60px"
+                    height="60px"
+                    class="lg-only"
+                  />
+                </div>
+                <p>
+                  석유사랑 <br />
+                  구독하기
+                </p></a
+              >
+            </li>
+            <li id="kakao" class="side-btn-long">
+              <a href="../sub/sub15.html" target="_blank"
+                ><div class="tac">
+                  <img
+                    src="../images/common/kakao-ico.png"
+                    alt="insta"
+                    width="60px"
+                    height="60px"
+                    class="lg-only"
+                  />
+                </div>
+                <p>
+                  카톡 채널 <br />
+                  이벤트
+                </p></a
+              >
+            </li>
+          </ul>
+          <div id="btn-top" class="side-btn">
+            <img src="../images/common/up.svg" alt="" />
+          </div>
+          <div id="btn-next-section" class="side-btn">
+            <img
+              src="../images/common/up.svg"
+              style="transform: rotate(180deg)"
+              alt=""
+            />
           </div>
         </div>
-      </section>
-      <!-- 커뮤니티 끝 -->
-      <div class="sidebtn-wrap">
-        <ul class="quickmenu-wrap">
-          <li id="subscribe" class="side-btn-long">
-            <a
-              href="https://www.knoc.co.kr/sub05/reader_participate_write.jsp"
-              target="_blank"
-              ><div class="tac">
-                <img
-                  src="../images/common/subscribe-ico.png"
-                  alt="insta"
-                  width="60px"
-                  height="60px"
-                  class="lg-only"
-                />
-              </div>
-              <p>
-                석유사랑 <br />
-                구독하기
-              </p></a
-            >
-          </li>
-          <li id="kakao" class="side-btn-long">
-            <a href="../sub/sub15.html" target="_blank"
-              ><div class="tac">
-                <img
-                  src="../images/common/kakao-ico.png"
-                  alt="insta"
-                  width="60px"
-                  height="60px"
-                  class="lg-only"
-                />
-              </div>
-              <p>
-                카톡 채널 <br />
-                이벤트
-              </p></a
-            >
-          </li>
-        </ul>
-        <div id="btn-top" class="side-btn">
-          <img src="../images/common/up.svg" alt="" />
-        </div>
-        <div id="btn-next-section" class="side-btn">
-          <img
-            src="../images/common/up.svg"
-            style="transform: rotate(180deg)"
-            alt=""
-          />
-        </div>
+        <!-- 푸터 -->
+        <footer id="footer_wrap">
+          <div class="footer-logo">
+            <img src="../images/common/flogo.png" alt="한국석유공사 로고" />
+          </div>
+          <div class="footer-info">
+            <span>
+              울산광역시 중구 종가로 305 한국석유공사 ⓒ KNOC 2025 ALL RIGHTS
+              RESERVED.
+            </span>
+          </div>
+        </footer>
+        <!-- 푸터 -->
       </div>
-      <!-- 푸터 -->
-      <footer id="footer_wrap">
-        <div class="footer-logo">
-          <img src="../images/common/flogo.png" alt="한국석유공사 로고" />
-        </div>
-        <div class="footer-info">
-          <span>
-            울산광역시 중구 종가로 305 한국석유공사 ⓒ KNOC 2025 ALL RIGHTS
-            RESERVED.
-          </span>
-        </div>
-      </footer>
-      <!-- 푸터 -->
     </div>
     <!-- js -->
     <script defer src="../common/js/lib/jquery-3.6.4.min.js"></script>
-    <script defer src="../common/js/lib/gsap.min.js"></script>
-    <script defer src="../common/js/lib/ScrollTrigger.min.js"></script>
+    <!-- <script defer src="../common/js/lib/gsap.min.js"></script>
+    <script defer src="../common/js/lib/ScrollTrigger.min.js"></script> -->
+    <script defer src="../common/js/lib/slick.min.js"></script>
     <script
       defer
       src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"

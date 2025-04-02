@@ -15,37 +15,49 @@ let isWhite = false;
 //   }
 // };
 
-const textColorChange = () => {};
+const navColorChange = (flag) => {
+  if (flag === "black") {
+    $(".parent-item").css("color", "#3a3a3a");
+    $("#knoc-logo > img").attr("src", "../images/common/logo-b.png");
+    $("#header-left > p").css("color", "#3a3a3a");
+  } else {
+    $(".parent-item").css("color", "#ffffff");
+    $("#knoc-logo > img").attr("src", "../images/common/logo.png");
+    $("#header-left > p").css("color", "#ffffff");
+  }
+};
 
 $(document).ready(function () {
   $(window).on("scroll", function () {
     if (window.scrollY > 80) {
       nav.classList.add("active");
-      $(".parent-item").css("color", "#3a3a3a");
+      navColorChange("black");
     } else {
       nav.classList.remove("active");
-      $(".parent-item").css("color", "#ffffff");
+      navColorChange("white");
     }
   });
-
-  $(".nav-parent-wrap").mouseenter(function () {
-    $("#full-nav").addClass("active");
-    $(".parent-item").css("color", "#3a3a3a");
+  $(".parent-item").on("click", function (param) {
+    if ($(".sub-menu-wrap").hasClass("menu-active")) {
+      $(".sub-menu-wrap").removeClass("menu-active");
+    }
+    $(this).children(".sub-menu-wrap").addClass("menu-active");
   });
-  $("#full-nav").mouseleave(function () {
-    $("#full-nav").removeClass("active");
-    // console.log($("#header").hasClass("active"));
-    if ($("#header").is(".fixed .active")) {
-      console.log("true");
-      $(".parent-item").css("color", "#3a3a3a");
-      return;
-    } else if ($("#header").is(".active")) {
-      console.log("true");
-      $(".parent-item").css("color", "#3a3a3a");
-      return;
-    } else {
-      console.log("false");
-      $(".parent-item").css("color", "#ffffff");
+  $(".main-container").on("click", function () {
+    console.log($(".sub-menu-wrap").hasClass("menu-active"));
+    if ($(".sub-menu-wrap").hasClass("menu-active")) {
+      $(".sub-menu-wrap").removeClass("menu-active");
+    }
+  });
+  $("#header").mouseenter(function () {
+    nav.classList.add("active");
+    navColorChange("black");
+  });
+  $("#header").mouseleave(function () {
+    nav.classList.remove("active");
+    navColorChange("white");
+    if ($(".sub-menu-wrap").hasClass("menu-active")) {
+      $(".sub-menu-wrap").removeClass("menu-active");
     }
   });
 });
