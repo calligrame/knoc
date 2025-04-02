@@ -947,6 +947,22 @@ a#btn-unsubscribe:link {
 
 /* 모바일 */
 @media all and (max-width: 768px) {
+  .sidebtn-wrap {
+    bottom: 50px;
+  }
+  .side-btn {
+    width: 30px;
+    height: 30px;
+  }
+  .side-btn-long {
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+  .side-btn-long img {
+    width: 30px;
+    height: 30px;
+  }
   .article-body-container {
     padding-top: 2em;
     padding-left: 2em;
