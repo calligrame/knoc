@@ -716,6 +716,7 @@ body {
   .articles-section {
     flex-direction: column;
   }
+
   .sidebtn-wrap {
     bottom: 50px;
   }

@@ -341,6 +341,9 @@ input:checked ~ .tab-content-wrap {
   }
   #header-right {
   }
+  #header-center {
+    display: none;
+  }
   #header {
     height: 70px;
     width: 100vw;
