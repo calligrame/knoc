@@ -477,6 +477,16 @@ h3.cardTitle {
   display: flex;
   gap: 0.9rem;
 }
+.pic-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pic-wrap {
+  display: flex;
+  width: fit-content;
+  gap: 1.5rem;
+}
 .half-pic-container .content_image {
   width: auto;
 }
