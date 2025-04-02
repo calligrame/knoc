@@ -225,6 +225,10 @@ body {
   text-align: center;
 }
 
+.news-thumb img {
+  width: 100%;
+}
+
 /* 15 */
 .btn-article {
   color: #fff;
