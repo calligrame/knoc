@@ -862,4 +862,8 @@ body {
   .footer-info {
     line-height: 1.8rem;
   }
+  .news-thumb img {
+    height: 100%;
+    width: unset;
+  }
 }
