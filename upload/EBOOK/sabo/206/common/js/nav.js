@@ -37,13 +37,14 @@ $(document).ready(function () {
       navColorChange("white");
     }
   });
-  $(".parent-item").on("click", function (param) {
+  $(".parent-item-title").mouseenter(function (param) {
+    console.log("enter");
     if ($(".sub-menu-wrap").hasClass("menu-active")) {
       $(".sub-menu-wrap").removeClass("menu-active");
     }
-    $(this).children(".sub-menu-wrap").addClass("menu-active");
+    $(this).siblings(".sub-menu-wrap").addClass("menu-active");
   });
-  $(".main-container").on("click", function () {
+  $(".parent-item").mouseleave(function () {
     console.log($(".sub-menu-wrap").hasClass("menu-active"));
     if ($(".sub-menu-wrap").hasClass("menu-active")) {
       $(".sub-menu-wrap").removeClass("menu-active");

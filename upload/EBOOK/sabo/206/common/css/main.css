@@ -407,8 +407,9 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
     "knocNow knocNow knocNow issue1 issue1  issue2 issue2"
-    "knocNow knocNow knocNow issue1 issue1  familyKnoc familyKnoc"
-    "knocNow knocNow knocNow issue1 issue1  news news";
+    "knocNow knocNow knocNow issue1 issue1  issue2 issue2"
+    "knocNow knocNow knocNow familyKnoc familyKnoc  news news"
+    "knocNow knocNow knocNow familyKnoc familyKnoc  news news";
   width: 1440px;
   gap: 1vw;
   z-index: 2;
