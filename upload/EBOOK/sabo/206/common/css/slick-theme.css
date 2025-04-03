@@ -189,3 +189,9 @@
 .slick-dots li.slick-active {
   opacity: 1;
 }
+
+@media all and (max-width: 768px) {
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+}

@@ -973,6 +973,9 @@ a#btn-unsubscribe:link {
     width: 30px;
     height: 30px;
   }
+  .article-header-container {
+    background-position: center center;
+  }
   .article-body-container {
     padding-top: 2em;
     padding-left: 2em;
@@ -1018,9 +1021,7 @@ a#btn-unsubscribe:link {
     text-align: left;
     width: fit-content;
   }
-  .side-btn-long img {
-    width: 50%;
-  }
+
   .tools-wrap {
     display: flex;
   }
@@ -1084,6 +1085,16 @@ a#btn-unsubscribe:link {
   .interview-answer-container {
     /* flex-direction: column; */
   }
+  .scroll {
+    width: 30px;
+    height: 30px;
+    &::before {
+      top: 4px;
+      left: 7px;
+      width: 10px;
+      height: 10px;
+    }
+  }
   .dot-frame {
     padding: 20px;
   }
@@ -1101,9 +1112,11 @@ a#btn-unsubscribe:link {
   }
   #footer_wrap {
     flex-direction: column;
-    width: 100vw;
+    width: unset;
   }
+
   .footer-info {
     line-height: 1.8rem;
+    text-align: center;
   }
 }
