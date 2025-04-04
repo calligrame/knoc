@@ -1119,4 +1119,7 @@ a#btn-unsubscribe:link {
     line-height: 1.8rem;
     text-align: center;
   }
+  .event-header {
+    background-image: url("../../images/sub/sub16/header-mob.jpg") !important;
+  }
 }
