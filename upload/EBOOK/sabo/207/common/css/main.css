@@ -52,7 +52,7 @@ body {
 }
 
 .main-slide-container {
-  height: 1080px;
+  height: 100vh;
   overflow: hidden;
   display: block;
 }
@@ -60,6 +60,15 @@ body {
   /* width: 1920px !important; */
 }
 
+.video-desc {
+  position: absolute;
+  text-align: right;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.8rem;
+  right: 10%;
+  top: 80%;
+}
 #footer_wrap {
   width: 100%;
   background-color: #222222;

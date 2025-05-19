@@ -352,6 +352,26 @@ input:checked ~ .tab-content-wrap {
   height: 100%;
 }
 
+.nav-btn-wrap {
+  display: flex;
+  gap: 10px;
+}
+.nav-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+.nav-btn:hover {
+  background-color: #03446a;
+  color: #ffffff !important;
+}
+.nav-btn > a:link {
+  color: unset;
+}
 /*  */
 @media all and (max-width: 1024px) {
   #header-left {
