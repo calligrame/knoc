@@ -62,10 +62,10 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > Bottomoffset) {
       $(".sidebtn-wrap").stop().fadeIn(duration1);
-      $(".mob-side-menu-container").stop().fadeIn(duration1);
+      // $(".mob-side-menu-container").stop().fadeIn(duration1);
     } else {
       $(".sidebtn-wrap").stop().fadeOut(duration1);
-      $(".mob-side-menu-container").stop().fadeOut(duration1);
+      // $(".mob-side-menu-container").stop().fadeOut(duration1);
     }
   });
   // 맨 위로
