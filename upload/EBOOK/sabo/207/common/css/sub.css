@@ -21,6 +21,11 @@ a:visited {
 .question-prefix {
   color: #03446a;
 }
+.lead-box{
+  border-left: 5px solid #222222;
+  padding-left: 1.5rem;
+  color: #5a5a5a;
+}
 
 /* 콘텐츠 헤더 영역 시작 */
 .article-header-container {
