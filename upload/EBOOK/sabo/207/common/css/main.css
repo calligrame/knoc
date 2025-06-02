@@ -804,6 +804,12 @@ body {
 #kakao {
   background-color: #ffe812;
 }
+#quiz {
+  background-color: #42a952;
+}
+#quiz p {
+  color: white;
+}
 
 @media all and (max-width: 768px) {
   .main-slide-container {

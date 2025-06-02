@@ -21,7 +21,7 @@ a:visited {
 .question-prefix {
   color: #03446a;
 }
-.lead-box{
+.lead-box {
   border-left: 5px solid #222222;
   padding-left: 1.5rem;
   color: #5a5a5a;
@@ -690,6 +690,12 @@ h3.cardTitle {
 }
 #kakao {
   background-color: #ffe812;
+}
+#quiz {
+  background-color: #42a952;
+}
+#quiz p {
+  color: white;
 }
 .side-btn {
   width: 60px;

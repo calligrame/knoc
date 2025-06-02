@@ -1722,6 +1722,12 @@ h3.cardTitle {
 #kakao {
   background-color: #ffe812;
 }
+#quiz {
+  background-color: #42a952;
+}
+#quiz p {
+  color: white;
+}
 .side-btn {
   width: 60px;
   height: 60px;
