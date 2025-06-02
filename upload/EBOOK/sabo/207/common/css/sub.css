@@ -1095,6 +1095,22 @@ a#btn-unsubscribe:link {
   .annotation-wrap .caption {
     padding-top: 0;
   }
+  .row {
+    flex-direction: column;
+  }
+  .body-cards-wrap {
+    padding: 1em;
+  }
+  .cardContainer {
+    padding: 1rem;
+  }
+  .front {
+    padding: 1em;
+  }
+
+  h3.cardTitle {
+    font-size: 1.2rem;
+  }
   .related-article-wrap {
     flex-direction: column;
   }
