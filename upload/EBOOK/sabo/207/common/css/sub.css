@@ -1110,6 +1110,10 @@ a#btn-unsubscribe:link {
   .interview-answer-container {
     /* flex-direction: column; */
   }
+  .highlight {
+    background-color: rgba(213, 247, 90, 0.333);
+    font-size: 0.9rem;
+  }
   .scroll {
     width: 30px;
     height: 30px;
