@@ -683,6 +683,19 @@ body {
   font-weight: 700;
 }
 
+.thumb-text-wrap-small .subtitle::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.depart {
+  font-size: 1rem;
+}
 .thumb-text-wrap-small .subtitle {
   font-family: var(--KNOC-main-h4-font-family);
   font-size: 1.25rem;
@@ -1002,6 +1015,19 @@ body {
   .thumb-text-wrap-small .subtitle {
     font-size: 0.8rem;
   }
+
+  .depart {
+    font-size: 0.8rem;
+  }
+  .thumb-text-wrap-small .subtitle::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #222222;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .news-bento .bento-item:nth-child(4) {
     padding: unset;
   }
@@ -1023,7 +1049,7 @@ body {
   }
   .insight-bento .bento-item {
     min-height: 150px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 3rem;
   }
   .insight-thumb {
     position: relative;
