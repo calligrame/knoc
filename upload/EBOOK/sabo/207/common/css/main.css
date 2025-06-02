@@ -674,6 +674,7 @@ body {
   font-weight: 500;
   margin-bottom: 10px;
   border-bottom: 2px solid white;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.569);
 }
 
 .thumb-text-wrap-small > .title {
@@ -681,6 +682,12 @@ body {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 700;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.569);
+}
+
+#mentorInterview .title,
+#mentorInterview .category {
+  text-shadow: unset;
 }
 
 .thumb-text-wrap-small .subtitle::before {
