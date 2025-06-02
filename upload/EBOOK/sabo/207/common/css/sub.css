@@ -202,8 +202,9 @@ a:visited {
 
 .mob-side-menu-item-wrap {
   padding: 2rem 1rem 2rem 1rem;
-
   width: 100%;
+  height: 50vh;
+  overflow-y: scroll;
 }
 .mob-side-menu-item {
   font-size: 0.95rem;

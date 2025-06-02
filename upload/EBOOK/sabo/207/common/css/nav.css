@@ -395,7 +395,30 @@ input:checked ~ .tab-content-wrap {
     align-items: center;
     padding: unset;
   }
-  #header-right {
+  .nav-btn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px 30px;
+  }
+  .nav-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #03446a;
+    border-radius: 5px;
+    border: 1px solid #03446a;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-btn:hover {
+    background-color: #03446a;
+    color: #ffffff !important;
+  }
+  .nav-btn > a:link {
+    color: unset;
   }
   #header-center {
     display: none;
@@ -463,9 +486,13 @@ input:checked ~ .tab-content-wrap {
   #nav-cate-wrap {
     gap: 30px;
   }
+  #header-right {
+    display: none;
+  }
   .nav-item-title {
     font-size: 1rem;
   }
+
   .cate-title {
     margin-bottom: 35px;
   }
