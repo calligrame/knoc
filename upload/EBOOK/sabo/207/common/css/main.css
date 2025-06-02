@@ -1018,6 +1018,7 @@ body {
   }
   .thumb-text-wrap-small > .category {
     border-bottom: 1px solid #3a3a3a;
+    text-shadow: unset;
   }
   .thumb-text-wrap-small .subtitle {
     font-size: 0.8rem;
@@ -1161,6 +1162,7 @@ body {
   }
   .thumb-text-wrap-small > .title {
     font-size: 0.95rem;
+    text-shadow: unset;
   }
   .bento-item {
     box-shadow: unset;
