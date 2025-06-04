@@ -1148,7 +1148,9 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .youtube-thumb-img {
+
+  .youtube-thumb-img,
+  .insta-thumb-img {
     height: unset;
   }
   .social-item {
