@@ -21,11 +21,6 @@ a:visited {
 .question-prefix {
   color: #03446a;
 }
-.lead-box {
-  border-left: 5px solid #222222;
-  padding-left: 1.5rem;
-  color: #5a5a5a;
-}
 
 /* 콘텐츠 헤더 영역 시작 */
 .article-header-container {
@@ -192,7 +187,6 @@ a:visited {
   background-color: #ffffff;
   z-index: 9;
   bottom: -100%;
-  display: none;
   transition: all 500ms ease-in-out;
   padding: 1rem;
 }
@@ -202,10 +196,8 @@ a:visited {
 
 .mob-side-menu-item-wrap {
   padding: 2rem 1rem 2rem 1rem;
+
   width: 100%;
-  height: auto;
-  max-height: 50vh;
-  overflow-y: scroll;
 }
 .mob-side-menu-item {
   font-size: 0.95rem;
@@ -530,17 +522,7 @@ h3.cardTitle {
   padding: 40px;
   margin-bottom: 40px;
 }
-.highlight {
-  background-color: rgba(213, 247, 90, 0.333);
-  font-size: 1.25rem;
-}
-.dot-list {
-  padding-left: 0;
-  margin-left: 20px;
-}
-.dot-list li {
-  list-style: disc;
-}
+
 /* 오일실록 표(다음호에 지울 거) */
 .grid-container {
   display: grid;
@@ -651,7 +633,6 @@ h3.cardTitle {
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 10px;
 }
 .challenge-results-wrap .content_image {
   width: 20%;
@@ -692,12 +673,6 @@ h3.cardTitle {
 }
 #kakao {
   background-color: #ffe812;
-}
-#quiz {
-  background-color: #42a952;
-}
-#quiz p {
-  color: white;
 }
 .side-btn {
   width: 60px;
@@ -1095,22 +1070,6 @@ a#btn-unsubscribe:link {
   .annotation-wrap .caption {
     padding-top: 0;
   }
-  .row {
-    flex-direction: column;
-  }
-  .body-cards-wrap {
-    padding: 1em;
-  }
-  .cardContainer {
-    padding: 1rem;
-  }
-  .front {
-    padding: 1em;
-  }
-
-  h3.cardTitle {
-    font-size: 1.2rem;
-  }
   .related-article-wrap {
     flex-direction: column;
   }
@@ -1125,10 +1084,6 @@ a#btn-unsubscribe:link {
   }
   .interview-answer-container {
     /* flex-direction: column; */
-  }
-  .highlight {
-    background-color: rgba(213, 247, 90, 0.333);
-    font-size: 0.9rem;
   }
   .scroll {
     width: 30px;
