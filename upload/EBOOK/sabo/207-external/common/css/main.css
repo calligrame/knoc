@@ -52,7 +52,7 @@ body {
 }
 
 .main-slide-container {
-  height: 1080px;
+  height: 100vh;
   overflow: hidden;
   display: block;
 }
@@ -60,6 +60,15 @@ body {
   /* width: 1920px !important; */
 }
 
+.video-desc {
+  position: absolute;
+  text-align: right;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.8rem;
+  right: 10%;
+  top: 80%;
+}
 #footer_wrap {
   width: 100%;
   background-color: #222222;
@@ -665,6 +674,7 @@ body {
   font-weight: 500;
   margin-bottom: 10px;
   border-bottom: 2px solid white;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.569);
 }
 
 .thumb-text-wrap-small > .title {
@@ -672,8 +682,27 @@ body {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 700;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.569);
 }
 
+#mentorInterview .title,
+#mentorInterview .category {
+  text-shadow: unset;
+}
+
+.thumb-text-wrap-small .subtitle::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.depart {
+  font-size: 1rem;
+}
 .thumb-text-wrap-small .subtitle {
   font-family: var(--KNOC-main-h4-font-family);
   font-size: 1.25rem;
@@ -731,10 +760,10 @@ body {
   gap: 1vw;
 }
 .insta-thumb-img {
-  width: 240px;
+  height: 260px;
 }
 .youtube-thumb-img {
-  height: 240px;
+  height: 260px;
 }
 
 /* 위로, 공유하기 버튼 */
@@ -794,6 +823,12 @@ body {
 }
 #kakao {
   background-color: #ffe812;
+}
+#quiz {
+  background-color: #42a952;
+}
+#quiz p {
+  color: white;
 }
 
 @media all and (max-width: 768px) {
@@ -983,9 +1018,23 @@ body {
   }
   .thumb-text-wrap-small > .category {
     border-bottom: 1px solid #3a3a3a;
+    text-shadow: unset;
   }
   .thumb-text-wrap-small .subtitle {
     font-size: 0.8rem;
+  }
+
+  .depart {
+    font-size: 0.8rem;
+  }
+  .thumb-text-wrap-small .subtitle::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #222222;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .news-bento .bento-item:nth-child(4) {
     padding: unset;
@@ -1008,7 +1057,7 @@ body {
   }
   .insight-bento .bento-item {
     min-height: 150px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 3rem;
   }
   .insight-thumb {
     position: relative;
@@ -1099,7 +1148,9 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .youtube-thumb-img {
+
+  .youtube-thumb-img,
+  .insta-thumb-img {
     height: unset;
   }
   .social-item {
@@ -1113,6 +1164,7 @@ body {
   }
   .thumb-text-wrap-small > .title {
     font-size: 0.95rem;
+    text-shadow: unset;
   }
   .bento-item {
     box-shadow: unset;

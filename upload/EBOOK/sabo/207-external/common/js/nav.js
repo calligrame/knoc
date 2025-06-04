@@ -20,10 +20,14 @@ const navColorChange = (flag) => {
     $(".parent-item").css("color", "#3a3a3a");
     $("#knoc-logo > img").attr("src", "../images/common/logo-b.png");
     $("#header-left > p").css("color", "#3a3a3a");
+    $("#header-right .nav-btn").css("color", "#3a3a3a");
+    $("#header-right .nav-btn").css("border", "1px solid #3a3a3a");
   } else {
     $(".parent-item").css("color", "#ffffff");
     $("#knoc-logo > img").attr("src", "../images/common/logo.png");
     $("#header-left > p").css("color", "#ffffff");
+    $("#header-right .nav-btn").css("color", "#ffffff");
+    $("#header-right .nav-btn").css("border", "1px solid #ffffff");
   }
 };
 
