@@ -760,10 +760,10 @@ body {
   gap: 1vw;
 }
 .insta-thumb-img {
-  width: 240px;
+  height: 260px;
 }
 .youtube-thumb-img {
-  height: 240px;
+  height: 260px;
 }
 
 /* 위로, 공유하기 버튼 */
