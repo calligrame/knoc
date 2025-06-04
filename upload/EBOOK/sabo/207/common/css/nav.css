@@ -425,7 +425,7 @@ input:checked ~ .tab-content-wrap {
   }
   #header {
     height: 70px;
-    width: 100vw;
+    width: 100%;
   }
   #mobile-full-nav {
     display: block;
