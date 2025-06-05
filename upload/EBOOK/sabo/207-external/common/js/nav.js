@@ -2,18 +2,6 @@ const logoImage = document.querySelector(".logo");
 const nav = document.querySelector("#header");
 const navHeight = nav.getBoundingClientRect().height;
 let isWhite = false;
-// export const updateState = (logoState) => {
-//   isWhite = logoState;
-//   updateLogo();
-// };
-
-// const updateLogo = () => {
-//   if (isWhite) {
-//     logoImage.classList.add("logo-white");
-//   } else {
-//     logoImage.classList.remove("logo-white");
-//   }
-// };
 
 const navColorChange = (flag) => {
   if (flag === "black") {
