@@ -524,6 +524,23 @@ h3.cardTitle {
   width: 90%;
 }
 
+.ai-item-title {
+  font-size: 1.5rem;
+  font-family: Pretendard-Bold sans-serif;
+}
+.ai-item-list li {
+  list-style: disc;
+  font-size: var(--KNOC-article-text-font-size);
+  font-family: var(--KNOC-article-text-font-family);
+  line-height: 1.875;
+  margin-left: 20px;
+}
+.ai-item-list li b,
+.bolder {
+  font-weight: 700;
+  font-family: Pretendard-Bold sans-serif;
+}
+
 /* 점선 프레임 */
 .dot-frame {
   border: 2px dashed #777;
@@ -540,36 +557,6 @@ h3.cardTitle {
 }
 .dot-list li {
   list-style: disc;
-}
-/* 오일실록 표(다음호에 지울 거) */
-.grid-container {
-  display: grid;
-}
-
-.grid-container {
-  font-size: var(--KNOC-article-text-font-size);
-}
-.grid-item {
-  padding: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-bottom: 1px solid #3a3a3a;
-}
-
-.grid-head {
-  background-color: #03446a;
-  text-align: center;
-  color: white;
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
-}
-
-.item-year {
-  font-weight: 700;
-  color: #03446a;
 }
 
 /* 작은 제목들 꾸며주는 거 */
