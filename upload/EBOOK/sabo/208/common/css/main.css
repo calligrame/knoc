@@ -106,7 +106,7 @@ body {
 
 .theme-title {
   font-family: var(--KNOC-main-h1-font-family);
-  font-size: var(--KNOC-main-h1-font-size);
+  font-size: 3.5rem;
   overflow: hidden;
 }
 
