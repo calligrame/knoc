@@ -682,10 +682,11 @@ h3.cardTitle {
   background-color: #ffe812;
 }
 #quiz {
-  background-color: #42a952;
+  background-image: url(../../images/common/event2-side-bg.jpg);
+  background-position: center;
 }
 #quiz p {
-  color: white;
+  color: rgb(54, 39, 39);
 }
 .side-btn {
   width: 60px;
@@ -1148,6 +1149,9 @@ a#btn-unsubscribe:link {
     width: unset;
   }
 
+  .horizontal-text-container {
+    flex-direction: column;
+  }
   .footer-info {
     line-height: 1.8rem;
     text-align: center;

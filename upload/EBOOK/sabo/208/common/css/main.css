@@ -430,12 +430,12 @@ body {
 .news-bento {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3 1fr);
   grid-template-areas:
-    "knocNow knocNow knocNow issue1 issue1  issue2 issue2"
-    "knocNow knocNow knocNow issue1 issue1  issue2 issue2"
-    "knocNow knocNow knocNow familyKnoc familyKnoc  news news"
-    "knocNow knocNow knocNow familyKnoc familyKnoc  news news";
+    "knocNow knocNow knocNow issue1 issue1 issue1 issue1"
+    "knocNow knocNow knocNow issue1 issue1 issue1 issue1"
+    "knocNow knocNow knocNow familyKnoc familyKnoc news news"
+    "knocNow knocNow knocNow familyKnoc familyKnoc news news";
   width: 1440px;
   gap: 1vw;
   z-index: 2;
@@ -445,17 +445,15 @@ body {
   grid-area: knocNow;
 }
 .news-bento .bento-item:nth-child(2) {
+  padding: 10vh 0;
   grid-area: issue1;
 }
 
 .news-bento .bento-item:nth-child(3) {
-  grid-area: issue2;
-}
-.news-bento .bento-item:nth-child(4) {
   grid-area: familyKnoc;
   padding: 7vh 0;
 }
-.news-bento .bento-item:nth-child(5) {
+.news-bento .bento-item:nth-child(4) {
   grid-area: news;
 }
 
@@ -825,10 +823,11 @@ body {
   background-color: #ffe812;
 }
 #quiz {
-  background-color: #42a952;
+  background-image: url(../../images/common/event2-side-bg.jpg);
+  background-position: center;
 }
 #quiz p {
-  color: white;
+  color: rgb(54, 39, 39);
 }
 
 @media all and (max-width: 768px) {
@@ -1006,6 +1005,13 @@ body {
   .news-bento .bento-item {
     min-height: 150px;
     margin-bottom: 1.25rem;
+  }
+  .news-bento .bento-item:nth-child(2) {
+    padding: 0 0;
+  }
+
+  .news-bento .bento-item:nth-child(3) {
+    padding: 0 0;
   }
   .news-main-thumb {
     position: relative;
