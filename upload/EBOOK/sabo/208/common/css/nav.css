@@ -448,6 +448,7 @@ input:checked ~ .tab-content-wrap {
 
   #header-left p {
     /* display: none; */
+    font-size: 0.65rem;
   }
 
   .nav-container {
@@ -472,7 +473,7 @@ input:checked ~ .tab-content-wrap {
     display: none;
   }
   #header-left > a {
-    width: 150px;
+    width: 110px;
   }
 
   .logo img {
