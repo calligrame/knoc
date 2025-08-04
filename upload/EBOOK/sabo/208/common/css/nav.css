@@ -447,7 +447,7 @@ input:checked ~ .tab-content-wrap {
   }
 
   #header-left p {
-    display: none;
+    /* display: none; */
   }
 
   .nav-container {
@@ -471,9 +471,10 @@ input:checked ~ .tab-content-wrap {
   #btn_nav {
     display: none;
   }
-  .logo {
-    width: 100%;
+  #header-left > a {
+    width: 150px;
   }
+
   .logo img {
     width: 100%;
   }
