@@ -294,6 +294,11 @@ body {
   overflow: hidden;
   top: 0;
 }
+
+#news-thumb {
+  width: 100%;
+}
+
 .news-etc-thumb > img {
   transition: all 500ms ease-in-out;
 }
