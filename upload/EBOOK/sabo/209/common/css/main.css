@@ -63,7 +63,7 @@ body {
 .video-desc {
   position: absolute;
   text-align: right;
-  color: #222222;
+  color: #fff;
   opacity: 0.5;
   font-size: 0.8rem;
   right: 10%;
@@ -203,7 +203,7 @@ body {
 }
 .theme-desc-wrap {
   position: absolute;
-  color: #1a1a1a;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
