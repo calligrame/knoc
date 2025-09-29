@@ -106,8 +106,9 @@ body {
 
 .theme-title {
   font-family: var(--KNOC-main-h1-font-family);
-  font-size: 3.5rem;
-  overflow: hidden;
+  font-size: 4.5rem;
+  /* overflow: hidden; */
+  margin-bottom: 20px;
 }
 
 .video-container {
@@ -209,7 +210,7 @@ body {
   justify-content: center;
 
   height: 100%;
-
+  top: 10%;
   left: 10%;
 }
 .theme-desc {
@@ -842,7 +843,8 @@ body {
   }
 
   .theme-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
   }
   .theme-desc {
     font-size: 0.8rem;
@@ -882,6 +884,7 @@ body {
   }
   .theme-desc-wrap {
     left: unset;
+    top: unset;
     justify-content: flex-end;
     padding: 2em;
     padding-bottom: 4em;
