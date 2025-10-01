@@ -457,10 +457,15 @@ body {
 }
 
 .news-bento .bento-item:nth-child(3) {
+  padding: 10vh 0;
+  grid-area: issue2;
+}
+
+.news-bento .bento-item:nth-child(4) {
   grid-area: familyKnoc;
   padding: 7vh 0;
 }
-.news-bento .bento-item:nth-child(4) {
+.news-bento .bento-item:nth-child(5) {
   grid-area: news;
 }
 
