@@ -439,8 +439,8 @@ body {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(3 1fr);
   grid-template-areas:
-    "knocNow knocNow knocNow issue1 issue1 issue1 issue1"
-    "knocNow knocNow knocNow issue1 issue1 issue1 issue1"
+    "knocNow knocNow knocNow issue1 issue1 issue2 issue2"
+    "knocNow knocNow knocNow issue1 issue1 issue2 issue2"
     "knocNow knocNow knocNow familyKnoc familyKnoc news news"
     "knocNow knocNow knocNow familyKnoc familyKnoc news news";
   width: 1440px;
@@ -457,10 +457,15 @@ body {
 }
 
 .news-bento .bento-item:nth-child(3) {
+  padding: 10vh 0;
+  grid-area: issue2;
+}
+
+.news-bento .bento-item:nth-child(4) {
   grid-area: familyKnoc;
   padding: 7vh 0;
 }
-.news-bento .bento-item:nth-child(4) {
+.news-bento .bento-item:nth-child(5) {
   grid-area: news;
 }
 
