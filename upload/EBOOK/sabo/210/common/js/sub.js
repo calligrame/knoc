@@ -84,18 +84,18 @@ $(document).ready(function () {
     $(".mob-side-menu-container").removeClass("open");
   });
 
-  // // 현재 페이지 링크 복사
-  // $("#btn-share").on("click", function () {
-  //   let currentLink = window.location.href;
-  //   var textarea = document.createElement("textarea");
-  //   document.body.appendChild(textarea);
-  //   textarea.value = currentLink;
-  //   textarea.select();
-  //   document.execCommand("copy");
-  //   document.body.removeChild(textarea);
-  //   alert("URL이 복사되었습니다.");
-  //   // showToast("URL이 복사되었습니다.");
-  // });
+  // 현재 페이지 링크 복사
+  $("#btn-share").on("click", function () {
+    let currentLink = window.location.href;
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = currentLink;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("URL이 복사되었습니다.");
+    // showToast("URL이 복사되었습니다.");
+  });
   $(".scroll").on("click", function (e) {
     e.preventDefault();
     $("html, body")
