@@ -589,6 +589,9 @@ h3.cardTitle {
   width: 50%;
   border-radius: 3rem;
   margin: 0 auto;
+}
+
+.rounded-title p {
   text-align: center;
 }
 
