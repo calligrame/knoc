@@ -63,6 +63,8 @@
         name="twitter:image:src"
         content="./images/sns/sns_img.jpg"
       />
+      <link rel="shortcut icon" href="../favicon.ico" />
+
       <link rel="stylesheet" href="../common/css/sub.css" />
       <script defer src="../common/js/lib/jquery-3.6.4.min.js"></script>
       <script defer src="../common/js/lib/gsap.min.js"></script>
@@ -70,9 +72,14 @@
       <script defer src="../common/js/lib/ScrollToPlugin.min.js"></script>
       <script defer src="../common/js/lib/Observer.min.js"></script>
 
-      <link rel="shortcut icon" href="../favicon.ico" />
-
       <script defer src="../common/js/sub.js"></script>
+
+      <!-- 슬라이드 관련 -->
+      <link rel="stylesheet" href="../common/css/slick.css" />
+      <link rel="stylesheet" href="../common/css/slick-theme.css" />
+      <script defer src="../common/js/lib/slick.min.js"></script>
+      <script defer src="../common/js/sub-slick.js"></script>
+
       <title>석유사랑</title>
       <!-- HTLM5shiv ie6~8 -->
       <!--[if lt IE 9]>
@@ -89,25 +96,19 @@
     <div class="mob-side-menu-container">
       <ul class="mob-side-menu-item-wrap">
         <li class="mob-side-menu-item">
-          <a href="#section1">직접 만든 크리스마스 장식으로 따뜻해진 연말</a>
-        </li>
-        <li class="mob-side-menu-item">
-          <a href="#section1">참가자 후기</a>
+          <a href="#section1">'석유사랑' 카카오톡 채널 추가 이벤트</a>
         </li>
       </ul>
     </div>
     <div id="header"></div>
     <div
-      class="article-header-container"
-      style="background-image: url(../images/sub/sub15/header.jpg)"
+      class="event-header article-header-container"
+      style="background-image: url(../images/sub/sub16/header.jpg)"
     >
       <div></div>
       <div class="content-title-wrap">
-        <h5 class="article-subtitle">행복한 DIY</h5>
-        <h2 class="article-title">
-          2025년 연말을 빛낸 <br />
-          나만의 크리스마스 리스 & 오르골 만들기
-        </h2>
+        <h5 class="article-subtitle">EVENT</h5>
+        <h2 class="article-title">'석유사랑' 카카오톡 채널 추가 이벤트</h2>
         <p class="article-writer"></p>
       </div>
       <div class="scroll"></div>
@@ -117,41 +118,27 @@
         <div class="side-menu-container">
           <ul class="side-menu-item-wrap">
             <li class="side-menu-item" data-target="section1">
-              <a href="#section1"
-                >직접 만든 크리스마스 장식으로 따뜻해진 연말</a
-              >
-            </li>
-            <li class="side-menu-item" data-target="section2">
-              <a href="#section2">참가자 후기</a>
+              <a href="#section1">'석유사랑' 카카오톡 채널 추가 이벤트</a>
             </li>
           </ul>
         </div>
-        <div id="section1" class="content-title">
-          <h5></h5>
-        </div>
         <div class="text-content-wrap">
-          <div class="text-part mb70">
-            <p>
-              연말이 가까워지면 일상의 속도도 조금씩 달라진다. 바쁜 하루
-              속에서도 작은 장식을 하나 들여놓고 싶어지는 시기, 석유사랑이
-              준비한 ‘크리스마스 리스 & 오르골 만들기’ 이벤트를 통해 공사
-              구성원들은 직접 작품을 완성하며 미리 크리스마스 분위기를 느낄 수
-              있었다. 참여자들은 생화 리스와 나무 오르골 DIY 키트를 받아,
-              하나하나 조립하고 장식하며 가족과 함께 소중한 시간을 보냈다.
-              완성된 작품은 집안 곳곳에 포근한 연말 분위기를 전하며, 올 연말을
-              한층 더 따뜻하게 만들어줄 것이다. 참여자들이 가족과 함께 직접 만든
-              리스와 오르골, 그리고 그 과정에서 느낀 즐거움과 따뜻한 이야기를
-              만나보자.
-            </p>
-          </div>
-          <div id="section2" class="content-title mb20">
+          <div id="section1" class="content-title mb20">
             <h5></h5>
           </div>
           <div class="content_image">
-            <img
-              src="../images/sub/sub15/sub15-1.jpg"
-              alt="행복한 DIY 참가자 후기"
-            />
+            <img src="../images/sub/sub16/sub16-1.jpg" alt="fishtail bit" />
+          </div>
+          <div id="event" class="dot-frame">
+            <div class="text-part">
+              <div>
+                <a href="https://naver.me/x1mAUrW0" target="_blank"
+                  ><div class="rounded-title">
+                    <p>이벤트 응모하러 가기</p>
+                  </div></a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -230,7 +217,7 @@
               />
             </div>
             <p>
-              카카오톡 채널 <br />
+              카카오톡 채널<br />
               이벤트
             </p></a
           >
@@ -279,11 +266,11 @@
     <!-- 푸터 -->
     <footer id="footer_wrap">
       <div class="footer-logo">
-        <img src="../images/common/flogo.png" alt="한국석유공사 로고" />
+        <img src="../images/common/flogo.png" alt="" />
       </div>
       <div class="footer-info">
         <span>
-          울산광역시 중구 종가로 305 한국석유공사 ⓒ KNOC 2025 ALL RIGHTS
+          울산광역시 중구 종가로 305 한국석유공사 ⓒ KNOC 2024 ALL RIGHTS
           RESERVED.
         </span>
       </div>
