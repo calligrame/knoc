@@ -835,7 +835,7 @@ body {
   background-position: center;
 }
 #quiz p {
-  color: rgb(54, 39, 39);
+  color: rgb(255, 255, 255);
 }
 
 @media all and (max-width: 768px) {
