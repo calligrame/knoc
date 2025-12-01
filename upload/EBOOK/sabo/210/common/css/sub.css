@@ -676,6 +676,9 @@ h3.cardTitle {
 .side-btn-long a:active {
   color: #3a3a3a;
 }
+.side-btn-long p {
+  text-align: center;
+}
 #subscribe {
   background-color: #c3e0ff;
 }
