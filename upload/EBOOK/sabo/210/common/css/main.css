@@ -887,7 +887,7 @@ body {
     justify-content: flex-end;
     padding: 2em;
     padding-bottom: 4em;
-    z-index: 7;
+    z-index: 999;
   }
 
   #myVideo {
