@@ -900,6 +900,9 @@ body {
     transform: translateX(-25%);
   }
 
+  #myVideo source {
+  }
+
   .panel:nth-child(1) {
     flex-direction: column;
     justify-content: center;
