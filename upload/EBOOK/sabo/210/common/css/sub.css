@@ -989,6 +989,7 @@ a#btn-unsubscribe:link {
     padding: 5px;
     font-size: 0.8rem;
     border-radius: 5px;
+    width: 50%;
   }
   .side-btn-long img {
     width: 30px;
@@ -1048,6 +1049,9 @@ a#btn-unsubscribe:link {
   }
   .quickmenu-wrap {
     flex-direction: row;
+    width: 100%;
+    padding: 0 2rem;
+    justify-content: center;
   }
   .side-btn {
     box-shadow: unset;
