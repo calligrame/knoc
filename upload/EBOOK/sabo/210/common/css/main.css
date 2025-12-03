@@ -215,7 +215,9 @@ body {
   font-size: var(--KNOC-article-text-font-size);
   line-height: var(--KNOC-article-text-line-height);
 }
-
+#myVideo {
+  transform: translateY(-10%);
+}
 .thumb-text-wrap {
   display: flex;
   flex-direction: column;
@@ -896,10 +898,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-25%);
-    transform: translateX(-25%);
+    transform: translateY(-10%);
+    transform: translateX(-50%);
   }
-
+  .news-thumb img {
+    transform: translateX(-10%);
+  }
   #myVideo source {
   }
 
