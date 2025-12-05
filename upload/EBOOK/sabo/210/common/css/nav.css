@@ -356,6 +356,7 @@ input:checked ~ .tab-content-wrap {
   display: flex;
   gap: 10px;
 }
+
 .nav-btn {
   cursor: pointer;
   padding: 10px 20px;
@@ -369,7 +370,8 @@ input:checked ~ .tab-content-wrap {
   background-color: #03446a;
   color: #ffffff !important;
 }
-.nav-btn > a:link {
+.nav-btn > a:link,
+.nav-btn-wrap a:visited {
   color: unset;
 }
 /*  */
